@@ -37,7 +37,7 @@
     src: url(./Fonts/Poppins-Light.woff);
 }
 @font-face {
-    font-family: 'Poppin_semi';
+    font-family: 'Poppin_semi_bold';
     src: url(./Fonts/Poppins-SemiBold.woff) format('woff'),
          url(./Fonts/Poppins-SemiBold.ttf) format('truetype'),
          url(./Fonts/Poppins-SemiBold.woff2) format('woff2'),
