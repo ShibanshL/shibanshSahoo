@@ -153,9 +153,9 @@
 }
 .Text svg{
     font-family: 'Poppins_semi';
-    width:45vw;
-    stroke-dasharray: 800;
-    stroke-dashoffset: 800;
+    width:30vw;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
     animation: NameAnimate 4s linear forwards;
     cursor: pointer;
 }

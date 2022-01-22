@@ -24,8 +24,8 @@ var phone = document.getElementById('phone')
 var P1_Mob_background = document.getElementById('EmpireState_building')
 var name_svg_text = document.querySelector('.My_Text .Text')
 var info_span = document.querySelector('.My_Text .Info h1 span')
-var name_svg_mob = document.querySelectorAll('.Page1_Mob .SVG_n svg text')
-var name_svg = document.querySelectorAll('.My_Text .Text svg text')
+var name_svg_mob = document.querySelector('.Page1_Mob .SVG_n svg')
+var name_svg = document.querySelector('.My_Text .Text svg')
 var text_mob = document.querySelector('.Page1_Tab .Tab_Text h1')
 var text = document.querySelector('.My_Text .Info h1')
 var icons_p1_sub = document.querySelector('.My_Text .Icons .Icons_sub')
@@ -246,18 +246,22 @@ Button_Mob.onclick = ()=>{
     function Page1_Light_Mob(){
         text_mob.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text_mob.style.color="black"
-        for(var i=0;i<name_svg_mob.length;i++){
-            name_svg_mob[i].style.stroke="black"
-        }
+        // for(var i=0;i<name_svg_mob.length;i++){
+        //     name_svg_mob[i].style.stroke="black"
+        // }
+        name_svg_mob.style.stroke="black"
+        
         P1_Mob_background.src = './Images/2 (1).png'
     }
     
     function Page1_Dark_Mob(){
         text_mob.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text_mob.style.color="white"
-        for(var j=0;j<name_svg_mob.length;j++){
-            name_svg_mob[j].style.stroke="white"
-        }
+        // for(var j=0;j<name_svg_mob.length;j++){
+        //     name_svg_mob[j].style.stroke="white"
+        // }
+        name_svg_mob.style.stroke="white"
+
         P1_Mob_background.src = './Images/1(1).png'
     }
 
@@ -272,9 +276,10 @@ Button_Mob.onclick = ()=>{
         phone.src='./Images/s10_L.png'
         text.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text.style.color="black"
-        for(var i=0;i<name_svg.length;i++){
-            name_svg[i].style.stroke="black"
-        }
+        // for(var i=0;i<name_svg.length;i++){
+        //     name_svg[i].style.stroke="black"
+        // }
+        name_svg.style.stroke="black"
         for(var i=0;i<icons_p1.length;i++){
             icons_p1[i].style.fill="black"
         }
@@ -286,9 +291,10 @@ Button_Mob.onclick = ()=>{
         phone.src='./Images/s10_D1.png'
         text.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text.style.color="white"
-        for(var j=0;j<name_svg.length;j++){
-            name_svg[j].style.stroke="white"
-        }
+        // for(var j=0;j<name_svg.length;j++){
+        //     name_svg[j].style.stroke="white"
+        // }
+        name_svg.style.stroke="white"
         for(var j=0;j<icons_p1.length;j++){
             icons_p1[j].style.fill="white"
         }
@@ -594,9 +600,10 @@ function Page1Load(){
 function Page1ScrollP1(){
     name_svg_text.style.transition='0.5s ease'
     name_svg_text.style.position='absolute'
-    name_svg_text.style.top='0'
-    name_svg_text.style.width='15vw'
-    name_svg_text.style.height='15vh'
+    name_svg_text.style.top='5vh'
+    name_svg_text.style.left='5vh'
+    name_svg_text.style.width='12vw'
+    name_svg_text.style.height='12vh'
     name_svg_text.style.position='fixed'
     for(var i=0;i<name_svg.length;i++){
         if(i%2==0){
@@ -628,6 +635,8 @@ function Page1ScrollP1else(){
     name_svg_text.style.width='100vw'
     name_svg_text.style.height='100vh'
     name_svg_text.style.position='absolute'
+    name_svg_text.style.top='0vh'
+    name_svg_text.style.left='0vh'
     for(var i=0;i<name_svg.length;i++){
         
         name_svg[i].style.fill="none"
