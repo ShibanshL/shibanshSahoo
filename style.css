@@ -56,7 +56,11 @@
   }
 @font-face {
     font-family: 'Poppins_new';
-    src: url(./Fonts/Poppins-SemiBold.ttf);
+    src: url(./Fonts/Poppins-SemiBold.ttf),
+    url(./Fonts/Poppins-SemiBold.woff) format('woff'),
+    url(./Fonts/Poppins-SemiBold.woff2) format('woff2'),
+    url(./Fonts/Poppins-SemiBold.svg) format('svg'),
+    url(./Fonts/Poppins-SemiBold.eot) format('eot');
 }
 
 *{
