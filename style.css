@@ -41,9 +41,9 @@
     src: url(./Fonts/Poppins-SemiBold.woff) format('woff'),
          url(./Fonts/Poppins-SemiBold.ttf) format('truetype'),
          url(./Fonts/Poppins-SemiBold.woff2) format('woff2'),
-         url(./Fonts/Poppins-SemiBold.svg) format('svg'),
-         url(./Fonts/Poppins-SemiBold.eot) format('eot');
-    ;
+         url(./Fonts/Poppins-SemiBold.svg) format('svg');
+    src: url(./Fonts/Poppins-SemiBold.eot) format('eot');
+    
 }
 @font-face {
     font-family: 'MyWebFont';
