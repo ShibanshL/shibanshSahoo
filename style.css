@@ -852,7 +852,7 @@ background: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
        
     }
     .all_skills div h2{
-        font-family: 'Cascadia Code';
+        font-family: 'Source code pro_1', monospace;
         font-size: 1.25rem;
         margin-left: 1vw;
         opacity: 0;
@@ -960,7 +960,7 @@ background: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
        
     }
     .all_skills div h2{
-        font-family: 'Cascadia Code';
+        font-family: 'Source code pro_1', monospace;
         font-size: 4vw;
         margin-left: 1vw;
     }
