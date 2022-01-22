@@ -11,7 +11,8 @@ var Buttons = document.querySelector('.Main_Page .Button')
 var icon = document.getElementById('LD_Mode') 
 var i = 0
 var j = 0
-var text_style = ['Franklin Gothic Medium', 'Arial Narrow', 'Arial','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans','Impact', 'Haettenschweiler', 'Arial Narrow Bold']
+// var text_style = ['Franklin Gothic Medium', 'Arial Narrow', 'Arial','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans','Impact', 'Haettenschweiler', 'Arial Narrow Bold']
+var text_style = ['Arial','Courier New','Georgia','Times New Roman','Verdana']
 var num=0
 
 
