@@ -156,7 +156,7 @@
     width:30vw;
     stroke-dasharray: 2500;
     stroke-dashoffset: 2500;
-    animation: NameAnimate 4s linear forwards;
+    animation: NameAnimate 6s linear forwards;
     cursor: pointer;
 }
 
