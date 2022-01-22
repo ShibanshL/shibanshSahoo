@@ -11,7 +11,7 @@ var Buttons = document.querySelector('.Main_Page .Button')
 var icon = document.getElementById('LD_Mode') 
 var i = 0
 var j = 0
-// var text_style = ['Franklin Gothic Medium', 'Arial Narrow', 'Arial','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans','Impact', 'Haettenschweiler', 'Arial Narrow Bold']
+var text_style1 = ['Franklin Gothic Medium', 'Arial Narrow', 'Arial','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans','Impact', 'Haettenschweiler', 'Arial Narrow Bold']
 var text_style = ['Arial','Courier New','Georgia','Times New Roman','Verdana']
 var num=0
 
@@ -1371,11 +1371,11 @@ orientationChangePopup()
 
 function Infinite_Text(){ 
     setInterval(()=>{
-        if(num<text_style.length){
-            info_span.style.fontFamily=text_style[num]
+        if(num<text_style1.length){
+            info_span.style.fontFamily=text_style1[num]
             num++
         }
-        else if (num>=text_style.length && num>0){
+        else if (num>=text_style1.length && num>0){
             num=0
         }
     },500)
