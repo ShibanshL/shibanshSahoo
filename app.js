@@ -1397,7 +1397,7 @@ function Infinite_Text_Tab(){
         else if (num>=text_style.length && num>0){
             num=0
         }
-    },500)
+    },300)
     }
     
 window.onload = Infinite_Text_Tab()
