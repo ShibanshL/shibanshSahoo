@@ -315,6 +315,7 @@
     
     }
     .Page1_Mob .SVG_n svg{
+        width: 80vw;
         stroke-dasharray: 3000;
         stroke-dashoffset: 3000;
         animation: NameAnimation 5s linear forwards;
@@ -362,6 +363,7 @@
     .Page1_Mob .SVG_n svg{
         stroke-dasharray: 3000;
         stroke-dashoffset: 3000;
+        width: 80vw;
         animation: NameAnimation 5s linear forwards;
         opacity: 1;
     }
