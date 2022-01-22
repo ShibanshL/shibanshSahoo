@@ -249,7 +249,7 @@ Button_Mob.onclick = ()=>{
         for(var i=0;i<name_svg_mob.length;i++){
             name_svg_mob[i].style.stroke="black"
         }
-        P1_Mob_background.src = '/Images/2 (1).png'
+        P1_Mob_background.src = './Images/2 (1).png'
     }
     
     function Page1_Dark_Mob(){
@@ -258,7 +258,7 @@ Button_Mob.onclick = ()=>{
         for(var j=0;j<name_svg_mob.length;j++){
             name_svg_mob[j].style.stroke="white"
         }
-        P1_Mob_background.src = '/Images/1(1).png'
+        P1_Mob_background.src = './Images/1(1).png'
     }
 
 
