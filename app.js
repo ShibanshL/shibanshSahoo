@@ -267,9 +267,9 @@ Button_Mob.onclick = ()=>{
     //Page1//
 
     function Page1_Light(){
-        laptop.src='/Images/macbook_L (10).png'
-        tab.src='/Images/Tablet_L(1).png'
-        phone.src='/Images/s10_L.png'
+        laptop.src='./Images/macbook_L (10).png'
+        tab.src='./Images/Tablet_L(1).png'
+        phone.src='./Images/s10_L.png'
         text.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text.style.color="black"
         for(var i=0;i<name_svg.length;i++){
@@ -281,9 +281,9 @@ Button_Mob.onclick = ()=>{
     }
     
     function Page1_Dark(){
-        laptop.src='/Images/macbook_D(1).png'
-        tab.src='/Images/Tablet_D.png'
-        phone.src='/Images/s10_D1.png'
+        laptop.src='./Images/macbook_D(1).png'
+        tab.src='./Images/Tablet_D.png'
+        phone.src='./Images/s10_D1.png'
         text.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text.style.color="white"
         for(var j=0;j<name_svg.length;j++){
