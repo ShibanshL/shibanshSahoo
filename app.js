@@ -1319,7 +1319,7 @@ function orientationChangePopup(){
     console.log(screen.orientation)
     if(PC.matches){
         window.onorientationchange = () =>{
-            if(j%2==0){
+            if(j%2==0 && screen.height>screen.width){
                 console.log('kinda')
                 popup.style.display='flex'
                 j++
@@ -1334,7 +1334,7 @@ function orientationChangePopup(){
     else if(TAB.matches){
         console.log(screen.orientation)
         window.onorientationchange = () =>{
-            if(j%2==0){
+            if(j%2==0 && screen.width>screen.height){
                 console.log('kinda')
                 popup_mob_tab.style.display='flex'
                 p2_man_Img.style.display='none'
