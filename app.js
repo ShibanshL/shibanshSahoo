@@ -27,6 +27,8 @@ var name_svg_text = document.querySelector('.My_Text .Text')
 var info_span = document.querySelector('.My_Text .Info h1 span')
 var name_svg_mob = document.querySelector('.Page1_Mob .SVG_n svg')
 var name_svg = document.querySelector('.My_Text .Text svg')
+var name_svg_t1 = document.querySelectorAll('.My_Text .Text svg g path')
+var name_svg_t2 = document.querySelectorAll('.Page1_Mob .SVG_n svg g path')
 var text_mob = document.querySelector('.Page1_Tab .Tab_Text h1')
 var text = document.querySelector('.My_Text .Info h1')
 var icons_p1_sub = document.querySelector('.My_Text .Icons .Icons_sub')
@@ -250,8 +252,10 @@ Button_Mob.onclick = ()=>{
         // for(var i=0;i<name_svg_mob.length;i++){
         //     name_svg_mob[i].style.stroke="black"
         // }
-        name_svg_mob.style.stroke="black"
-        
+        // name_svg_mob.style.stroke="black"
+        for(var i=0; i<name_svg_t2.length;i++){
+            name_svg_t2[i].style.stroke='black'
+        }
         P1_Mob_background.src = './Images/2 (1).png'
     }
     
@@ -261,8 +265,10 @@ Button_Mob.onclick = ()=>{
         // for(var j=0;j<name_svg_mob.length;j++){
         //     name_svg_mob[j].style.stroke="white"
         // }
-        name_svg_mob.style.stroke="white"
-
+        // name_svg_mob.style.stroke="white"
+        for(var i=0; i<name_svg_t2.length;i++){
+            name_svg_t2[i].style.stroke='white'
+        }
         P1_Mob_background.src = './Images/1(1).png'
     }
 
@@ -280,6 +286,9 @@ Button_Mob.onclick = ()=>{
         // for(var i=0;i<name_svg.length;i++){
         //     name_svg[i].style.stroke="black"
         // }
+        for(var i=0; i<name_svg_t1.length;i++){
+            name_svg_t1[i].style.stroke='black'
+        }
         name_svg.style.stroke="black"
         for(var i=0;i<icons_p1.length;i++){
             icons_p1[i].style.fill="black"
@@ -295,6 +304,9 @@ Button_Mob.onclick = ()=>{
         // for(var j=0;j<name_svg.length;j++){
         //     name_svg[j].style.stroke="white"
         // }
+        for(var i=0; i<name_svg_t1.length;i++){
+            name_svg_t1[i].style.stroke='white'
+        }
         name_svg.style.stroke="white"
         for(var j=0;j<icons_p1.length;j++){
             icons_p1[j].style.fill="white"
