@@ -264,6 +264,7 @@
 }
 .Page1_Tab .Tab_Text{
     position: absolute;
+    overflow: hidden;
 }
 .Page1_Tab .Tab_Text h1{
     font-family: 'Poppins_1';
