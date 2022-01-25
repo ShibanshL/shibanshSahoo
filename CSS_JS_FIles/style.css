@@ -23,19 +23,6 @@
     src: url(./Fonts/AvantGuard.woff);
     font-weight: bold;
 }
-/* @font-face {
-    font-family: 'Poppins_L';
-    src: url(./Fonts/Poppins-Black.woff);
-}
-@font-face {
-    font-family: 'Poppins_B';
-    src: url(./Fonts/Poppins-Bold.woff);
-    font-style: normal;
-}
-@font-face {
-    font-family: 'PoppinsLight';
-    src: url(./Fonts/Poppins-Light.woff);
-} */
 @font-face {
     font-family: 'Poppin_semi_bold';
     src: url(./Fonts/Poppins-SemiBold.woff) format('woff'),
