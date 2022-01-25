@@ -249,10 +249,6 @@ Button_Mob.onclick = ()=>{
     function Page1_Light_Mob(){
         text_mob.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text_mob.style.color="black"
-        // for(var i=0;i<name_svg_mob.length;i++){
-        //     name_svg_mob[i].style.stroke="black"
-        // }
-        // name_svg_mob.style.stroke="black"
         for(var i=0; i<name_svg_t2.length;i++){
             name_svg_t2[i].style.stroke='black'
         }
@@ -262,10 +258,6 @@ Button_Mob.onclick = ()=>{
     function Page1_Dark_Mob(){
         text_mob.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text_mob.style.color="white"
-        // for(var j=0;j<name_svg_mob.length;j++){
-        //     name_svg_mob[j].style.stroke="white"
-        // }
-        // name_svg_mob.style.stroke="white"
         for(var i=0; i<name_svg_t2.length;i++){
             name_svg_t2[i].style.stroke='white'
         }
@@ -283,9 +275,6 @@ Button_Mob.onclick = ()=>{
         phone.src='./Images/s10_L.png'
         text.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text.style.color="black"
-        // for(var i=0;i<name_svg.length;i++){
-        //     name_svg[i].style.stroke="black"
-        // }
         for(var i=0; i<name_svg_t1.length;i++){
             name_svg_t1[i].style.stroke='black'
         }
@@ -301,9 +290,6 @@ Button_Mob.onclick = ()=>{
         phone.src='./Images/s10_D1.png'
         text.style.transition = `transform ${maxTiltEffectSetting.speed}ms ${maxTiltEffectSetting.easing}`
         text.style.color="white"
-        // for(var j=0;j<name_svg.length;j++){
-        //     name_svg[j].style.stroke="white"
-        // }
         for(var i=0; i<name_svg_t1.length;i++){
             name_svg_t1[i].style.stroke='white'
         }
