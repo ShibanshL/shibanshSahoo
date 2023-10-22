@@ -1,1968 +1,1915 @@
 @font-face {
-    font-family: 'Poppins_1';
-    src: url(./Fonts/Poppins-Medium.woff);
+  font-family: "Poppins_1";
+  src: url(./Fonts/Poppins-Medium.woff);
 }
 @font-face {
-    font-family: 'Source code pro_1';
-    src: url(./Fonts/SourceCodePro-Regular.woff);
+  font-family: "Source code pro_1";
+  src: url(./Fonts/SourceCodePro-Regular.woff);
 }
 @font-face {
-    font-family: 'Perpetua';
-    src: url(./Fonts/Perpetua.woff);
+  font-family: "Perpetua";
+  src: url(./Fonts/Perpetua.woff);
 }
 @font-face {
-    font-family: 'Rage';
-    src: url(./Fonts/RAGE.woff);
+  font-family: "Rage";
+  src: url(./Fonts/RAGE.woff);
 }
 @font-face {
-    font-family: 'Vivaldi_1';
-    src: url(./Fonts//VIVALDII.woff);
+  font-family: "Vivaldi_1";
+  src: url(./Fonts//VIVALDII.woff);
 }
 @font-face {
-    font-family: 'Avant Guard_1';
-    src: url(./Fonts/AvantGuard.woff);
-    font-weight: bold;
+  font-family: "Avant Guard_1";
+  src: url(./Fonts/AvantGuard.woff);
+  font-weight: bold;
 }
 @font-face {
-    font-family: 'Poppin_semi_bold';
-    src: url(./Fonts/Poppins-SemiBold.woff) format('woff'),
-         url(./Fonts/Poppins-SemiBold.ttf) format('truetype'),
-         url(./Fonts/Poppins-SemiBold.woff2) format('woff2'),
-         url(./Fonts/Poppins-SemiBold.svg) format('svg');
-    src: url(./Fonts/Poppins-SemiBold.eot) format('eot');
-    
+  font-family: "Poppin_semi_bold";
+  src: url(./Fonts/Poppins-SemiBold.woff) format("woff"),
+    url(./Fonts/Poppins-SemiBold.ttf) format("truetype"),
+    url(./Fonts/Poppins-SemiBold.woff2) format("woff2"),
+    url(./Fonts/Poppins-SemiBold.svg) format("svg");
+  src: url(./Fonts/Poppins-SemiBold.eot) format("eot");
 }
 @font-face {
-    font-family: 'Poppins_new';
-    src: url(./Fonts/Poppins-SemiBold.ttf),
-    url(./Fonts/Poppins-SemiBold.woff) format('woff'),
-    url(./Fonts/Poppins-SemiBold.woff2) format('woff2'),
-    url(./Fonts/Poppins-SemiBold.svg) format('svg'),
-    url(./Fonts/Poppins-SemiBold.eot) format('eot');
+  font-family: "Poppins_new";
+  src: url(./Fonts/Poppins-SemiBold.ttf),
+    url(./Fonts/Poppins-SemiBold.woff) format("woff"),
+    url(./Fonts/Poppins-SemiBold.woff2) format("woff2"),
+    url(./Fonts/Poppins-SemiBold.svg) format("svg"),
+    url(./Fonts/Poppins-SemiBold.eot) format("eot");
 }
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
-    transition: 0.5s ease;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  transition: 0.5s ease;
 }
 
 /*Main Page*/
 
-
-.Main_Page{
-    display:block;
-    align-items: center;
-    justify-content: center;
+.Main_Page {
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Page1*/
 
-
-.Page1{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    width:100vw;
-    height:100vh;
-    overflow-x: hidden;
+.Page1 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
-.Images{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100vw;
-    height:100vh;
-    position: relative;
-    z-index: 1;
+.Images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
 }
-.Images .Laptop{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100vw;
-    height:100vh;
-    overflow: hidden;
+.Images .Laptop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
-.Laptop img{
-    width: 150vw;
-    transform: scale(1.4);
+.Laptop img {
+  width: 150vw;
+  transform: scale(1.4);
 }
-.Images .Phone{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100vw;
-    height:100vh;
-    position: absolute;
-    z-index: 2;
+.Images .Phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
 }
-.Phone img{
-    width:10vw;
-    margin-top: 40vh;
-    margin-left: 200vw;
-    transform: rotate(180deg);
-    
+.Phone img {
+  width: 10vw;
+  margin-top: 40vh;
+  margin-left: 200vw;
+  transform: rotate(180deg);
 }
-.Images .Tab{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100vw;
-    height:100vh;
-    position: absolute;
-    z-index: 2;
+.Images .Tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
 }
-.Tab img{
-    margin-top: 5vh;
-    width:20vw;
-    margin-left: -200vw;
-    transform: rotate(0deg);
+.Tab img {
+  margin-top: 5vh;
+  width: 20vw;
+  margin-left: -200vw;
+  transform: rotate(0deg);
 }
-.Text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100vw;
-    height:100vh;
-    position: absolute;
+.Text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
 }
-.Text svg{
-    font-family: 'Poppins_semi';
-    width:30vw;
-    stroke-dasharray: 2500;
-    stroke-dashoffset: 2500;
-    animation: NameAnimate 6s linear forwards;
-    cursor: pointer;
+.Text svg {
+  font-family: "Poppins_semi";
+  width: 30vw;
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 2500;
+  animation: NameAnimate 6s linear forwards;
+  cursor: pointer;
 }
 
-.My_Text{
-    height: 100vh;
-    width:100vw;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 90% 10%;
-    grid-template-areas: "info"
-                        "icons";
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 3;
+.My_Text {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 90% 10%;
+  grid-template-areas:
+    "info"
+    "icons";
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 3;
 }
-.Info{
-    grid-area: info;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100%;
-    height:100%;
-    position: absolute;
-
+.Info {
+  grid-area: info;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
-.Info h1{
-    font-family: 'Poppins_1';
-    font-size: 10vh;
-    color:rgb(0, 0, 0);
-    transition: 0.5s ease;
-    opacity: 0;
+.Info h1 {
+  font-family: "Poppins_1";
+  font-size: 10vh;
+  color: rgb(0, 0, 0);
+  transition: 0.5s ease;
+  opacity: 0;
 }
-.Info h1 span{
-    font-family: 'Perpetua';
-    font-size: 10vh;
-    transition: 0.5s ease;
+.Info h1 span {
+  font-family: "Perpetua";
+  font-size: 10vh;
+  transition: 0.5s ease;
 }
-.Icons{
-    grid-area: icons;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Icons {
+  grid-area: icons;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Icons .Icons_sub{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width:100%;
-    position: relative;
-    z-index: 4;
-    overflow-y: hidden;
-    padding-right: 75vw;
+.Icons .Icons_sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  overflow-y: hidden;
+  padding-right: 75vw;
 }
-.Icons svg{
-    width:0.8vw;
-    min-width:1.5vw;
-    margin-left: -8vw;
-    cursor: pointer;
+.Icons svg {
+  width: 0.8vw;
+  min-width: 1.5vw;
+  margin-left: -8vw;
+  cursor: pointer;
 }
-.Icons a .Behance{
-    min-width:1.8vw;
-    width:1.8vw;
+.Icons a .Behance {
+  min-width: 1.8vw;
+  width: 1.8vw;
 }
-.Icons svg:hover{
-    transform: translateY(-1em);
-    transition: 0.5s ease;
-    cursor: pointer;
+.Icons svg:hover {
+  transform: translateY(-1em);
+  transition: 0.5s ease;
+  cursor: pointer;
 }
 
 /*Mobile Mode Page1*/
 
-.Page1_Mob{
-    display: none;
-    align-items: center;
-    justify-content: space-evenly;
-    width:100vw;
-    height:100vh;
+.Page1_Mob {
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
 }
-.Page1_Mob .SVG_n{
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
+.Page1_Mob .SVG_n {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 /*Tab Mode Page1*/
 
-.Page1_Tab{
-    display:none;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width:100vw;
+.Page1_Tab {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
-.Page1_Tab .Tab_IMG{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width:100vw;
+.Page1_Tab .Tab_IMG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
-.Page1_Tab .Tab_IMG img{
-    width:40vw;
+.Page1_Tab .Tab_IMG img {
+  width: 40vw;
 }
-.Page1_Tab .Tab_Text{
-    position: absolute;
-    overflow: hidden;
+.Page1_Tab .Tab_Text {
+  position: absolute;
+  overflow: hidden;
 }
-.Page1_Tab .Tab_Text h1{
-    font-family: 'Poppins_1';
-    font-size: 10vh;
-    color:yellow;
+.Page1_Tab .Tab_Text h1 {
+  font-family: "Poppins_1";
+  font-size: 10vh;
+  color: yellow;
 }
-.Page1_Tab .Tab_Text h1 span{
-    font-family: 'Perpetua';
-    font-size: 15vh;
+.Page1_Tab .Tab_Text h1 span {
+  font-family: "Perpetua";
+  font-size: 15vh;
 }
 
 /*Tab Mode*/
 
-@media screen and (max-width:1026px) and (min-width:501px){
-    .Page1{
-        display: none;
-    }
-    .Page1_Tab{
-        display: flex;;
-    }
-    .Page1_Tab .Tab_IMG img{
-        width:80vw;
-        margin-top: 50vh;
-        opacity:0;
-    }
-    .Page1_Tab .Tab_Text h1{
-        font-family: 'Poppins_1';
-        font-size: 5vh;
-        color:rgb(0, 0, 0);
-        margin-top: 50vh ;
-        opacity: 0 ;
-    }
-    .Page1_Tab .Tab_Text h1 span{
-        font-family: 'Perpetua';
-        font-size: 6vh;
-    }
-    .Page1_Mob{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width:100vw;
-        height:100vh;
-    }
-    .Page1_Mob .SVG_n{
-        width:100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    
-    }
-    .Page1_Mob .SVG_n svg{
-        width: 80vw;
-        stroke-dasharray: 3000;
-        stroke-dashoffset: 3000;
-        animation: NameAnimation 5s linear forwards;
-        opacity: 1;
-    }
+@media screen and (max-width: 1026px) and (min-width: 501px) {
+  .Page1 {
+    display: none;
+  }
+  .Page1_Tab {
+    display: flex;
+  }
+  .Page1_Tab .Tab_IMG img {
+    width: 80vw;
+    margin-top: 50vh;
+    opacity: 0;
+  }
+  .Page1_Tab .Tab_Text h1 {
+    font-family: "Poppins_1";
+    font-size: 5vh;
+    color: rgb(0, 0, 0);
+    margin-top: 50vh;
+    opacity: 0;
+  }
+  .Page1_Tab .Tab_Text h1 span {
+    font-family: "Perpetua";
+    font-size: 6vh;
+  }
+  .Page1_Mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+  }
+  .Page1_Mob .SVG_n {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Page1_Mob .SVG_n svg {
+    width: 80vw;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: NameAnimation 5s linear forwards;
+    opacity: 1;
+  }
 }
 
 /*Mobile Mode*/
 
-@media screen and (max-width:500px){
-    .Page1{
-        display: none;
-    }
-    .Page1_Tab{
-        display: flex;
-    }
-    .Page1_Tab .Tab_IMG img{
-        width:100vw;
-        margin-top: 50vh;
-        opacity: 0;
-    }
-    .Page1_Tab .Tab_Text h1{
-        font-family: 'Poppins_1';
-        font-size: 3vh;
-        color:rgb(0, 0, 0);
-    }
-    .Page1_Tab .Tab_Text h1 span{
-        font-family: 'Perpetua';
-        font-size: 5vh;
-    }
-    .Page1_Mob{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width:100vw;
-        height:100vh;
-    }
-    .Page1_Mob .SVG_n{
-        width:100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    
-    }
-    .Page1_Mob .SVG_n svg{
-        stroke-dasharray: 3000;
-        stroke-dashoffset: 3000;
-        width: 80vw;
-        animation: NameAnimation 5s linear forwards;
-        opacity: 1;
-    }
-    
+@media screen and (max-width: 500px) {
+  .Page1 {
+    display: none;
+  }
+  .Page1_Tab {
+    display: flex;
+  }
+  .Page1_Tab .Tab_IMG img {
+    width: 100vw;
+    margin-top: 50vh;
+    opacity: 0;
+  }
+  .Page1_Tab .Tab_Text h1 {
+    font-family: "Poppins_1";
+    font-size: 3vh;
+    color: rgb(0, 0, 0);
+  }
+  .Page1_Tab .Tab_Text h1 span {
+    font-family: "Perpetua";
+    font-size: 5vh;
+  }
+  .Page1_Mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+  }
+  .Page1_Mob .SVG_n {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Page1_Mob .SVG_n svg {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    width: 80vw;
+    animation: NameAnimation 5s linear forwards;
+    opacity: 1;
+  }
 }
 
 @keyframes NameAnimation {
-    100%{
-        stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes NameAnimate {
-    100%{
-        stroke-dashoffset: 0;
-    }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
-
-
 
 /*Page2*/
 
-
-.Page2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100vw;
-    height:100vh;
+.Page2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
-.Page2 .Mobile_2{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    width:100vw;
-    height:100vh;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "text images";
-    overflow-x: hidden;
+.Page2 .Mobile_2 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "text images";
+  overflow-x: hidden;
 }
-.About_texts{
-    grid-area: text;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+.About_texts {
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
-.Sub1{
-    display:block;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2vw;
-    margin-left: 15vw;
-    
+.Sub1 {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2vw;
+  margin-left: 15vw;
 }
-.Sub1 h1{
-    font-family: 'Rage';
-    font-size: 4rem;
-    margin-left: -20vw;
-    opacity: 0;
+.Sub1 h1 {
+  font-family: "Rage";
+  font-size: 4rem;
+  margin-left: -20vw;
+  opacity: 0;
 }
-.Sub1 p{
-    font-family: 'Poppins_1';
-    text-align: justify;
-    font-size:1rem;
-    margin-left: -20vw;
-    opacity: 0;
+.Sub1 p {
+  font-family: "Poppins_1";
+  text-align: justify;
+  font-size: 1rem;
+  margin-left: -20vw;
+  opacity: 0;
 }
 
-.Sub1 p span{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2vw;
-   cursor: pointer;
+.Sub1 p span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+  cursor: pointer;
 }
-.Sub1 p span:hover{
-background: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+.Sub1 p span:hover {
+  background: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
 
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
-.About_Images{
-    grid-area: images;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+.About_Images {
+  grid-area: images;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
-.Iphone{
-    position: relative;
-    z-index: 1;
-    margin-left: 20vw;
-    opacity:0;
-    transform-origin: bottom;
+.Iphone {
+  position: relative;
+  z-index: 1;
+  margin-left: 20vw;
+  opacity: 0;
+  transform-origin: bottom;
 }
-.Man{
-    position: absolute;
-    z-index: 2;
-    margin-top: 13vh;
-    margin-left: 20vw;
-    opacity: 0;
-
+.Man {
+  position: absolute;
+  z-index: 2;
+  margin-top: 13vh;
+  margin-left: 20vw;
+  opacity: 0;
 }
 
 /*Tab Mode*/
 
-@media screen and (max-width:1025px) and (min-width:501px){
-    .Page2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width:100vw;
-        height:100vh;
-        overflow: hidden;
-    }
-    .Page2 .Mobile_2{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        width:100vw;
-        height:100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: "text" 
-                            "images";
-        overflow-x: hidden;
-        
-    }
-    .About_texts{
-        grid-area: text;
-        display:grid;
-        align-items: center;
-        justify-content:center;
-        height: 100%;
-        width: 100%;
-        padding-right: 15vw;
-    }
-    .Sub1{
-        display:block;
-        align-items: center;
-        justify-content: center;
+@media screen and (max-width: 1025px) and (min-width: 501px) {
+  .Page2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .Page2 .Mobile_2 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "text"
+      "images";
+    overflow-x: hidden;
+  }
+  .About_texts {
+    grid-area: text;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-right: 15vw;
+  }
+  .Sub1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .Sub1 h1 {
+    font-family: "Rage";
+    font-size: 5rem;
+    margin-left: 0vw;
+    opacity: 1;
+  }
+  .Sub1 p {
+    font-family: "Poppins_1";
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-left: 0vw;
+    opacity: 1;
+  }
+  .Sub1 p span {
+    font-size: 4vw;
+    cursor: pointer;
+  }
+  .About_Images {
+    grid-area: images;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+    width: 100%;
+  }
 
-
-    }
-    .Sub1 h1{
-        font-family: 'Rage';
-        font-size: 5rem;
-        margin-left: 0vw;
-        opacity: 1 ;
-
-    }
-    .Sub1 p{
-        font-family: 'Poppins_1';
-        text-align: justify;
-        font-size:1.5rem;
-        margin-left: 0vw;
-        opacity: 1 ;
-
-    }
-    .Sub1 p span{
-        font-size: 4vw;
-       cursor: pointer;
-    }
-    .About_Images{
-        grid-area: images;
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .Iphone{
-        right:-5vw;
-        bottom:10vh;
-        position: relative;
-        z-index: 1;
-        margin-left: 10vw;
-        opacity: 1;
-    }
-    .Iphone img{
-        width:25vw;
-    }
-    .Man{
-        position: absolute;
-        right:-0vw;
-        z-index: 2;
-        opacity: 1;
-    }
-    .Man img{
-        width:15vw;
-        margin-left: 15vw;
-        margin-top: -20vh;
-    }
+  .Iphone {
+    right: -5vw;
+    bottom: 10vh;
+    position: relative;
+    z-index: 1;
+    margin-left: 10vw;
+    opacity: 1;
+  }
+  .Iphone img {
+    width: 25vw;
+  }
+  .Man {
+    position: absolute;
+    right: -0vw;
+    z-index: 2;
+    opacity: 1;
+  }
+  .Man img {
+    width: 15vw;
+    margin-left: 15vw;
+    margin-top: -20vh;
+  }
 }
 
 /*Mobile Mode*/
 
-@media screen and (max-width:500px){
-    .Page2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width:100vw;
-        height:100vh;
-        overflow-x: hidden;
-    }
-    .Page2 .Mobile_2{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        width:100vw;
-        height:100vh;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: "text" 
-                            "images";
-        overflow-x: hidden;
-        
-    }
-    .About_texts{
-        grid-area: text;
-        display:grid;
-        align-items: center;
-        justify-content:center;
-        height: 100%;
-        width: 100%;
-        padding-right:5vw;
-        margin-left: -5vw;
-    }
-    .About_Images{
-        overflow-x: hidden;
-    }
-    .Sub1 h1{
-        font-family: 'Rage';
-        font-size: 10vw;
-        margin-left: -20vw;
-        opacity: 0;
-    }
-    .Sub1 p{
-        font-family: 'Poppins_1';
-        text-align: justify;
-        font-size:3vw;
-        margin-left: -100vw;
-        opacity: 0;
-    }
-    .Sub1 p span{
-        font-size: 5vw;
-       cursor: pointer;
-    }
-    .Iphone{
-        right:-35vw;
-        position: relative;
-        z-index: 1;
-        margin-left: 70vw;
-        transition: 0.5s ease;
-        opacity: 1;
-    }
-    .Iphone img{
-        width: 40vw;
-    }
-    .Man{
-        position:absolute;
-        right:30vw;
+@media screen and (max-width: 500px) {
+  .Page2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .Page2 .Mobile_2 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "text"
+      "images";
+    overflow-x: hidden;
+  }
+  .About_texts {
+    grid-area: text;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-right: 5vw;
+    margin-left: -5vw;
+  }
+  .About_Images {
+    overflow-x: hidden;
+  }
+  .Sub1 h1 {
+    font-family: "Rage";
+    font-size: 10vw;
+    margin-left: -20vw;
+    opacity: 0;
+  }
+  .Sub1 p {
+    font-family: "Poppins_1";
+    text-align: justify;
+    font-size: 3vw;
+    margin-left: -100vw;
+    opacity: 0;
+  }
+  .Sub1 p span {
+    font-size: 5vw;
+    cursor: pointer;
+  }
+  .Iphone {
+    right: -35vw;
+    position: relative;
+    z-index: 1;
+    margin-left: 70vw;
+    transition: 0.5s ease;
+    opacity: 1;
+  }
+  .Iphone img {
+    width: 40vw;
+  }
+  .Man {
+    position: absolute;
+    right: 30vw;
 
-        opacity: 0;
-        z-index: 2;
-    }
-    .Man img{
-        width:25vw;
-    }
+    opacity: 0;
+    z-index: 2;
+  }
+  .Man img {
+    width: 25vw;
+  }
 }
-
 
 /*Page3*/
 
-
-.Page3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width:100vw;
-    overflow-x: hidden;
+.Page3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
-.Page3 .Mobile_3{
+.Page3 .Mobile_3 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 100%;
+  grid-template-areas: "images text";
+}
+.Mobile_3 .Images_2 {
+  grid-area: images;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Images_2 .Woman {
+  position: absolute;
+  width: 12vw;
+  margin-left: -100vw;
+  z-index: 2;
+}
+.Images_2 .Ipad {
+  width: 30vw;
+  margin-left: -100vw;
+  margin-top: -10vh;
+}
+.Mobile_3 .Skills {
+  grid-area: text;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10vh;
+}
+.Skills .Sub2 {
+  width: 100%;
+  display: grid;
+  align-items: flex-start;
+  justify-content: left;
+  grid-gap: 3vh;
+}
+.Sub2 h1 {
+  font-family: "Avant Guard_1";
+  transition: 0.5s ease;
+  font-size: 5rem;
+  margin-left: 30vw;
+  opacity: 0;
+}
+.Sub2 h1 span {
+  font-family: "Vivaldi_1";
+  transition: 0.5s ease;
+}
+.Sub2 .all_skills {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-areas:
+    "html css js"
+    "mongo express node"
+    "react wordpress elementor"
+    "photoshop illustartor figma"
+    "xd";
+
+  grid-gap: 1vw;
+  margin-left: 1.5vw;
+}
+.all_skills div svg {
+  width: 1vw;
+  min-width: 1vw;
+  opacity: 0;
+}
+.all_skills div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  overflow: hidden;
+}
+.all_skills div::before {
+  content: "";
+  position: absolute;
+  height: 5vh;
+  width: 10vw;
+}
+.all_skills div:hover {
+  transform: translateY(-10px);
+  transition: 0.5s ease;
+}
+.all_skills div h2 {
+  font-family: "Source code pro_1", monospace;
+  font-size: 1rem;
+  margin-left: 1vw;
+}
+.all_skills :nth-child(1) {
+  grid-area: "html";
+}
+.all_skills :nth-child(2) {
+  grid-area: "css";
+}
+.all_skills :nth-child(3) {
+  grid-area: "js";
+}
+.all_skills :nth-child(4) {
+  grid-area: "mongo";
+}
+.all_skills :nth-child(5) {
+  grid-area: "express";
+}
+.all_skills :nth-child(6) {
+  grid-area: "node";
+}
+.all_skills :nth-child(7) {
+  grid-area: "react";
+}
+.all_skills :nth-child(8) {
+  grid-area: "wordpress";
+}
+.all_skills :nth-child(9) {
+  grid-area: "elementor";
+}
+.all_skills :nth-child(10) {
+  grid-area: "photoshop";
+}
+.all_skills :nth-child(11) {
+  grid-area: "figma";
+}
+.all_skills :nth-child(12) {
+  grid-area: "illustrator";
+}
+.all_skills :nth-child(13) {
+  grid-area: "xd";
+}
+
+/*Tab Mode*/
+
+@media screen and (max-width: 1025px) and (min-width: 501px) {
+  .Page3 .Mobile_3 {
     display: grid;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width:100vw;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 100%;
-    grid-template-areas: "images text";
-}
-.Mobile_3 .Images_2{
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+      "text"
+      "images";
+  }
+  .Mobile_3 .Skills {
+    grid-area: text;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .Sub2 h1 {
+    font-family: "Avant Guard_1";
+    font-size: 7rem;
+    opacity: 1;
+    margin-left: -120vw;
+  }
+  .Sub2 h1 span {
+    font-family: "Vivaldi_1";
+  }
+
+  .Sub2 .all_skills {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16% 16%;
+    grid-template-areas:
+      "html css"
+      "js mongo"
+      "express node"
+      "react wordpress"
+      "elementor photoshop"
+      "illustartor figma"
+      "xd";
+    grid-gap: 1vw;
+    margin-left: 20vw;
+  }
+  .all_skills div {
+    padding: 0.5vh 0;
+  }
+
+  .all_skills div svg {
+    width: 2vw;
+    min-width: 2vw;
+    opacity: 0;
+  }
+  .all_skills div h2 {
+    font-family: "Source code pro_1", monospace;
+    font-size: 1.25rem;
+    margin-left: 1vw;
+    opacity: 0;
+  }
+  .Mobile_3 .Images_2 {
     grid-area: images;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.Images_2 .Woman{
-    position: absolute;
-    width:12vw;
-    margin-left: -100vw;
-    z-index: 2;
-
-}
-.Images_2 .Ipad{
-    width: 30vw;
-    margin-left: -100vw;
-    margin-top: -10vh;
-}
-.Mobile_3 .Skills{
-    grid-area: text;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -10vh;
-}
-.Skills .Sub2{
-    width: 100%;
-    display: grid;
-    align-items:flex-start;
-    justify-content:left;
-    grid-gap:3vh ;
-}
-.Sub2 h1{
-    font-family: 'Avant Guard_1';
-    transition: 0.5s ease;
-    font-size: 5rem;
-    margin-left: 30vw;
-    opacity: 0;
-}
-.Sub2 h1 span{
-    font-family: 'Vivaldi_1';
-    transition: 0.5s ease;
-
-}
-.Sub2 .all_skills{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width:100%;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-areas: "html css js"
-                        "react sql java"
-                        "wordpress elementor photoshop"
-                        "illustartor xd figma";
-    grid-gap:1vw;
-    margin-left: 1.5vw;
-}
-.all_skills div svg{
-    width:1vw;
-    min-width: 1vw;
-    opacity:0;
-   
-}
-.all_skills div{
-    display: flex;
-    align-items:center;
     justify-content: left;
-    overflow: hidden;
-}
-.all_skills div::before{
-    content: '';
+  }
+  .Images_2 .Woman {
     position: absolute;
-    height: 5vh;
-    width:10vw;
-}
-.all_skills div:hover{
-    transform: translateY(-10px);
-    transition: 0.5s ease;
-}
-.all_skills div h2{
-    font-family: 'Source code pro_1', monospace;
-    font-size: 1rem;
-    margin-left: 1vw;
-}
-.all_skills :nth-child(1){
-    grid-area:'html';
-}
-.all_skills :nth-child(2){
-    grid-area:'css';
-}
-.all_skills :nth-child(3){
-    grid-area:'js';
-}
-.all_skills :nth-child(4){
-    grid-area:'react';
-}
-.all_skills :nth-child(5){
-    grid-area:'sql';
-}
-.all_skills :nth-child(6){
-    grid-area:'java';
-}
-.all_skills :nth-child(7){
-    grid-area:'wordpress';
-}
-.all_skills :nth-child(8){
-    grid-area:'elementor';
-}
-.all_skills :nth-child(9){
-    grid-area:'photoshop';
-}
-.all_skills :nth-child(10){
-    grid-area:'illustrator';
-}
-.all_skills :nth-child(11){
-    grid-area:'xd';
-}
-.all_skills :nth-child(12){
-    grid-area:'figma';
-}
+    width: 20vw;
+    margin-left: 5vw;
+  }
 
-/*Tab Mode*/
-
-@media screen and (max-width:1025px) and (min-width:501px){
-    .Page3 .Mobile_3{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width:100vw;
-        grid-template-columns: 100%;
-        grid-template-rows: 60% 40%;
-        grid-template-areas: 
-                                "text"
-                                "images" ;
-    }
-    .Mobile_3 .Skills{
-        grid-area: text;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    }
-    .Sub2 h1{
-        font-family: 'Avant Guard_1';
-        font-size: 7rem;
-        opacity: 1;
-        margin-left:-120vw;
-    }
-    .Sub2 h1 span{
-        font-family: 'Vivaldi_1';
-    
-    }
-    
-    .Sub2 .all_skills{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width:100%;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 16% 16% 16% 16% 16% 16%;
-        grid-template-areas: "html react"
-                            "css sql"
-                            "js java"
-                            "xd illustartor"
-                            "photoshop wordpress"
-                            "elementor figma";
-        grid-gap:1vw;
-        margin-left:20vw;
-    }
-    .all_skills div{
-        padding: 0.5vh 0;
-    }
-    
-    .all_skills div svg{
-        width:2vw;
-        min-width: 2vw;
-        opacity: 0;
-       
-    }
-    .all_skills div h2{
-        font-family: 'Source code pro_1', monospace;
-        font-size: 1.25rem;
-        margin-left: 1vw;
-        opacity: 0;
-    }
-    .Mobile_3 .Images_2{
-        grid-area: images;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-    }
-    .Images_2 .Woman{
-        position: absolute;
-        width:20vw;
-        margin-left: 5vw;
-    
-    }
-    
-    .Images_2 .Ipad{
-        width: 50vw;
-        margin-left: -20vw;
-        margin-top: -10vh;
-    }
-
-
+  .Images_2 .Ipad {
+    width: 50vw;
+    margin-left: -20vw;
+    margin-top: -10vh;
+  }
 }
 
 /*Mobile Mode*/
 
-@media screen and (max-width:500px){
-    .Page3{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 110vh;
-        width:100vw;
-        overflow-x: hidden;
-    }
-    .Page3 .Mobile_3{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width:100vw;
-        grid-template-columns: 100%;
-        grid-template-rows: 60% 40%;
-        grid-template-areas: 
-                                "text"
-                                "images" ;
-    }
-    .Mobile_3 .Skills{
-        grid-area: text;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    }
-    .Skills .Sub2{
-        width: 100%;
-        display: grid;
-        align-items:center;
-        justify-content:center;
-        grid-gap:3vh ;
-    }
-    .Sub2 h1{
-        font-family: 'Avant Guard_1';
-        font-size: 12vw;
-        position: relative;
-        margin-left: 0;
-        opacity: 1;
-    }
-    .Sub2 h1 span{
-        font-family: 'Vivaldi_1';
-    
-    }
-    
-    .Sub2 .all_skills{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width:100%;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 16% 16% 16% 16% 16% 16%;
-        grid-template-areas: "html react"
-                            "css sql"
-                            "js java"
-                            "illustrator xd"
-                            "photoshop wordpress"
-                            "elementor figma";
-        grid-gap:2vw;
-        margin-left:10vw;
-    }
-    
-    .all_skills div{
-        padding: 0.5vh 0;
-        margin-left: -5vw;
-    }
-    .all_skills div svg{
-        width:2vw;
-        min-width: 2vw;
-        opacity: 1;
-       
-    }
-    .all_skills div h2{
-        font-family: 'Source code pro_1', monospace;
-        font-size: 4vw;
-        margin-left: 1vw;
-    }
-    .Mobile_3 .Images_2{
-        grid-area: images;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-    }
-    .Images_2 .Woman{
-        position: absolute;
-        width:30vw;
-        margin-left: 5vw;
-    
-    }
-    
-    .Images_2 .Ipad{
-        width: 60vw;
-        margin-left: -20vw;
-        margin-top: -10vh;
-    }
+@media screen and (max-width: 500px) {
+  .Page3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .Page3 .Mobile_3 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+      "text"
+      "images";
+  }
+  .Mobile_3 .Skills {
+    grid-area: text;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .Skills .Sub2 {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 3vh;
+  }
+  .Sub2 h1 {
+    font-family: "Avant Guard_1";
+    font-size: 12vw;
+    position: relative;
+    margin-left: 0;
+    opacity: 1;
+  }
+  .Sub2 h1 span {
+    font-family: "Vivaldi_1";
+  }
 
+  .Sub2 .all_skills {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16% 16%;
+    grid-template-areas:
+      "html css"
+      "js mongo"
+      "express node"
+      "react wordpress"
+      "elementor photoshop"
+      "illustartor figma"
+      "xd";
+    grid-gap: 2vw;
+    margin-left: 10vw;
+  }
 
+  .all_skills div {
+    padding: 0.5vh 0;
+    margin-left: -5vw;
+  }
+  .all_skills div svg {
+    width: 2vw;
+    min-width: 2vw;
+    opacity: 1;
+  }
+  .all_skills div h2 {
+    font-family: "Source code pro_1", monospace;
+    font-size: 4vw;
+    margin-left: 1vw;
+  }
+  .Mobile_3 .Images_2 {
+    grid-area: images;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .Images_2 .Woman {
+    position: absolute;
+    width: 30vw;
+    margin-left: 5vw;
+  }
+
+  .Images_2 .Ipad {
+    width: 60vw;
+    margin-left: -20vw;
+    margin-top: -10vh;
+  }
 }
-
 
 /*Page4*/
 
+.Page4 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Page4 .Mobile_4 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 35% 65%;
+  grid-template-areas:
+    "P_heading"
+    "P_contents";
+}
+.Mobile_4 .P_heading {
+  grid-area: P_heading;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.P_heading h1 {
+  font-family: "Avant Guard_1";
+  font-size: 5vw;
+  margin-left: -50vw;
+  opacity: 0;
+}
+.P_heading h1 span {
+  font-family: "Perpetua";
+  font-size: 8vw;
+  font-weight: 400;
+}
+.Mobile_4 .P_contents {
+  grid-area: P_contents;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.P_contents .P_cSub {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "Projects Internships";
+  margin-left: 50vw;
+  opacity: 0;
+}
+.P_contents .Projects {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Projects .Pr_cards {
+  height: 90%;
+  width: 100%;
+}
+.Pr_cards .PR_card1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.PR_card1 img {
+  width: 20vw;
+  border-radius: 20px;
+}
 
-.Page4{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.PR_card1 .card1_details {
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Page4 .Mobile_4{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 35% 65%;
-    grid-template-areas: "P_heading"
-                        "P_contents";
+.PR_card1 .card1_details:hover {
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0;
 }
-.Mobile_4 .P_heading{
-    grid-area: P_heading;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width:100%;
+.card1_details h2 {
+  font-family: sans-serif;
+  color: white;
 }
-.P_heading h1{
-    font-family: 'Avant Guard_1';
-    font-size: 5vw;
-    margin-left: -50vw;
-    opacity: 0;
+
+.Pr_cards .PR_card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -5vh;
+  cursor: pointer;
 }
-.P_heading h1 span{
-    font-family: 'Perpetua';
-    font-size: 8vw;
+.PR_card2 img {
+  width: 20vw;
+  border-radius: 20px;
+}
+.PR_card2 .card2_details {
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s ease;
+}
+.PR_card2 .card2_details:hover {
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0;
+}
+.card2_details h2 {
+  font-family: sans-serif;
+  color: white;
+}
+.Projects .Pr_heading h1 {
+  font-family: "Poppins_1";
+  font-size: 2vw;
+  color: black;
+  text-align: center;
+}
+.Pr_heading {
+  height: 20%;
+  width: 100%;
+}
+.P_contents .Internships {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Internships .In_cards {
+  height: 90%;
+  width: 100%;
+}
+.In_cards .IN_card1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.IN_card1 img {
+  width: 20vw;
+  border-radius: 20px;
+}
+.IN_card1 .cardI1_details {
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.IN_card1 .cardI1_details:hover {
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0;
+}
+.cardI1_details h2 {
+  font-family: sans-serif;
+  color: white;
+}
+.In_cards .IN_card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -5vh;
+  cursor: pointer;
+}
+.IN_card2 img {
+  width: 20vw;
+  border-radius: 20px;
+}
+.IN_card2 .cardI2_details {
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.IN_card2 .cardI2_details:hover {
+  width: 20vw;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0;
+}
+.cardI2_details h2 {
+  font-family: sans-serif;
+  color: white;
+}
+.In_headings {
+  height: 20%;
+  width: 100%;
+}
+.Internships .In_headings h1 {
+  font-family: "Poppins_1";
+  font-size: 2vw;
+  color: black;
+  text-align: center;
+}
+
+@media (max-width: 1025px) and (min-width: 501px) {
+  .Page4 {
+    overflow: hidden;
+  }
+  .P_heading h1 {
+    font-family: "Avant Guard_1";
+    font-size: 10vw;
+    margin-left: 0vw;
+    opacity: 1;
+  }
+  .P_heading h1 span {
+    font-family: "Perpetua";
+    font-size: 15vw;
     font-weight: 400;
-
-}
-.Mobile_4 .P_contents{
-    grid-area: P_contents;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width:100%;
-}
-.P_contents .P_cSub{
+  }
+  .P_contents .P_cSub {
     display: grid;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width:80%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "Projects Internships";
-    margin-left: 50vw;
-    opacity: 0;
-}
-.P_contents .Projects{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width:100%;
-}
-.Projects .Pr_cards{
-    height: 90%;
-    width:100%;
-}
-.Pr_cards .PR_card1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-    cursor: pointer;
-}
-.PR_card1 img{
-    width:20vw;
-    border-radius:20px;
-}
-
-.PR_card1 .card1_details{
-    width:20vw;
-    height:100%;
-    border-radius:20px;
-    position: absolute;
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(5px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.PR_card1 .card1_details:hover{
-    width:20vw;
-    height:100%;
-    border-radius:20px;
-    opacity: 0;
-}
-.card1_details h2{
-    font-family: sans-serif;
-    color: white;
-}
-
-.Pr_cards .PR_card2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-    margin-top: -5vh;
-    cursor: pointer;
-}
-.PR_card2 img{
-    width:20vw;
-    border-radius:20px;
-}
-.PR_card2 .card2_details{
-    width:20vw;
-    height:100%;
-    border-radius:20px;
-    position: absolute;
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(5px);
-    opacity:1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.8s ease;
-}
-.PR_card2 .card2_details:hover{
-    width:20vw;
-    height:100%;
-    border-radius:20px;
-    opacity: 0;
-
-}
-.card2_details h2{
-    font-family: sans-serif;
-    color: white;
-}
-.Projects .Pr_heading h1{
-    font-family: 'Poppins_1';
-    font-size: 2vw;
-    color:black;
-    text-align: center;
-}
-.Pr_heading{
-    height: 20%;
-    width:100%;
-}
-.P_contents .Internships{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width:100%;
-}
-.Internships .In_cards{ 
-    height: 90%;
     width: 100%;
-}
-.In_cards .IN_card1{
+    margin-left: 0;
+    opacity: 1;
+  }
+  .Projects .Pr_heading h1 {
+    font-size: 7vw;
+  }
+  .PR_card1 img {
+    width: 40vw;
+    border-radius: 20px;
+  }
+  .PR_card1 .card1_details {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
+  }
+  .PR_card1 .card1_details:hover {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+  }
+  .card1_details h2 {
+    font-family: sans-serif;
+    color: white;
+  }
+  .Pr_cards .PR_card2 {
+    margin-top: 5vh;
+  }
+  .PR_card2 img {
+    width: 40vw;
+    border-radius: 20px;
+  }
+  .PR_card2 .card2_details {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .PR_card2 .card2_details:hover {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+  }
+  .card2_details h2 {
+    font-family: sans-serif;
+    color: white;
+  }
+  .Internships .In_headings h1 {
+    font-size: 7vw;
+  }
+  .In_cards .IN_card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     cursor: pointer;
-}
-.IN_card1 img{
-    width:20vw;
-    border-radius:20px;
-}
-.IN_card1 .cardI1_details{
-    width:20vw;
-    height:100%;
-    border-radius:20px;
+  }
+  .IN_card1 img {
+    width: 40vw;
+    border-radius: 20px;
+  }
+  .IN_card1 .cardI1_details {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px;
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.IN_card1 .cardI1_details:hover{
-    width:20vw;
-    height:100%;
-    border-radius:20px;
+  }
+  .IN_card1 .cardI1_details:hover {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px;
     opacity: 0;
-
-}
-.cardI1_details h2{
+  }
+  .cardI1_details h2 {
     font-family: sans-serif;
     color: white;
-}
-.In_cards .IN_card2{
+  }
+  .In_cards .IN_card2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
-    margin-top: -5vh;
+    position: relative;
+    margin-top: 5vh;
     cursor: pointer;
-
-}
-.IN_card2 img{
-    width:20vw;
-    border-radius:20px;
-}
-.IN_card2 .cardI2_details{
-    width:20vw;
-    height:100%;
-    border-radius:20px;
+  }
+  .IN_card2 img {
+    width: 40vw;
+    border-radius: 20px;
+  }
+  .IN_card2 .cardI2_details {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px;
     position: absolute;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.IN_card2 .cardI2_details:hover{
-    width:20vw;
-    height:100%;
-    border-radius:20px;
+  }
+  .IN_card2 .cardI2_details:hover {
+    width: 40vw;
+    height: 100%;
+    border-radius: 20px;
     opacity: 0;
-
+  }
 }
-.cardI2_details h2{
-    font-family: sans-serif;
-    color: white;
-}
-.In_headings{
-    height: 20%;
-    width:100%;
-}
-.Internships .In_headings h1{
-    font-family: 'Poppins_1';
-    font-size: 2vw;
-    color:black;
-    text-align: center;
-}
-
-@media (max-width:1025px) and (min-width:501px){
-    .Page4{
-        overflow: hidden;
-    }
-    .P_heading h1{
-        font-family: 'Avant Guard_1';
-        font-size: 10vw;
-        margin-left: 0vw;
-        opacity: 1;
-    }
-    .P_heading h1 span{
-        font-family: 'Perpetua';
-        font-size: 15vw;
-        font-weight: 400;
-    
-    }
-    .P_contents .P_cSub{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width:100%;
-        margin-left: 0;
-        opacity: 1;
-    }
-    .Projects .Pr_heading h1{
-        font-size: 7vw;
-    }
-    .PR_card1 img{
-        width:40vw;
-        border-radius:20px;
-    }
-    .PR_card1 .card1_details{
-        width:40vw;
-        height:100%;
-        border-radius:20px;
-        position: absolute;
-        background: rgba(255,255,255,0.2);
-        backdrop-filter: blur(5px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .PR_card1 .card1_details:hover{
-        width:40vw;
-        height:100%;
-        border-radius:20px;
-        opacity: 0;
-    }
-    .card1_details h2{
-        font-family: sans-serif;
-        color: white;
-    }
-    .Pr_cards .PR_card2{
-        margin-top: 5vh;
-    }
-    .PR_card2 img{
-        width:40vw;
-        border-radius:20px;
-    }
-    .PR_card2 .card2_details{
-        width:40vw;
-        height:100%;
-        border-radius:20px;
-        position: absolute;
-        background: rgba(255,255,255,0.2);
-        backdrop-filter: blur(5px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .PR_card2 .card2_details:hover{
-        width:40vw;
-        height:100%;
-        border-radius:20px;
-        opacity: 0;
-    
-    }
-    .card2_details h2{
-        font-family: sans-serif;
-        color: white;
-    }
-    .Internships .In_headings h1{
-        font-size: 7vw;
-    }
-    .In_cards .IN_card1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        cursor: pointer;
-    
-    }
-    .IN_card1 img{
-        width:40vw;
-        border-radius:20px;
-    }
-    .IN_card1 .cardI1_details{
-        width:40vw;
-        height:100%;
-        border-radius:20px;
-        position: absolute;
-        background: rgba(0,0,0,0.5);
-        backdrop-filter: blur(5px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .IN_card1 .cardI1_details:hover{
-        width:40vw;
-        height:100%;
-        border-radius:20px;
-        opacity: 0;
-    
-    }
-    .cardI1_details h2{
-        font-family: sans-serif;
-        color: white;
-    }
-    .In_cards .IN_card2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        margin-top: 5vh;
-        cursor: pointer;
-    
-    }
-    .IN_card2 img{
-        width:40vw;
-        border-radius:20px;
-    }
-    .IN_card2 .cardI2_details{
-        width:40vw;
-        height:100%;
-        border-radius:20px;
-        position: absolute;
-        background: rgba(0,0,0,0.5);
-        backdrop-filter: blur(5px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .IN_card2 .cardI2_details:hover{
-        width:40vw;
-        height:100%;
-        border-radius:20px;
-        opacity: 0;
-    
-    }
-}
-@media (max-width:501px){
-    .Page4{
-        height: 200vh;
-        overflow-x: hidden;
-    }
-    .P_heading h1{
-        font-family: 'Avant Guard_1';
-        font-size: 12vw;
-        opacity: 1;
-        margin-left: -100vw;
-    }
-    .P_heading h1 span{
-        font-family: 'Perpetua';
-        font-size: 20vw;
-    }
-    .P_contents .P_cSub{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width:100%;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: "Projects"
-                             "Internships";
-        margin-left: 0;
-        opacity: 1;
-    }
-    .Projects .Pr_heading h1{
-        font-size:10vw;
-    }
-    .PR_card1 img{
-        width:80vw;
-        border-radius:20px;
-    }
-    .PR_card1 .card1_details{
-        width:80vw;
-        height:100%;
-        border-radius:20px;
-        position: absolute;
-        background: rgba(255,255,255,0.2);
-        backdrop-filter: blur(5px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .PR_card1 .card1_details:hover{
-        width:80vw;
-        height:100%;
-        border-radius:20px;
-        opacity: 0;
-    }
-    .card1_details h2{
-        font-family: sans-serif;
-        color: white;
-    }
-    .Pr_cards .PR_card2{
-        margin-top: 5vh;
-    }
-    .PR_card2 img{
-        width:80vw;
-        border-radius:20px;
-    }
-    .PR_card2 .card2_details{
-        width:80vw;
-        height:100%;
-        border-radius:20px;
-        position: absolute;
-        background: rgba(255,255,255,0.2);
-        backdrop-filter: blur(5px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .PR_card2 .card2_details:hover{
-        width:80vw;
-        height:100%;
-        border-radius:20px;
-        opacity: 0;
-    
-    }
-    .card2_details h2{
-        font-family: sans-serif;
-        color: white;
-    }
-    .Internships .In_headings h1{
-        font-size: 12vw;
-    }
-    .In_cards .IN_card1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        cursor: pointer;
-    }
-    .IN_card1 img{
-        width:80vw;
-        border-radius:20px;
-    }
-    .IN_card1 .cardI1_details{
-        width:80vw;
-        height:100%;
-        border-radius:20px;
-        position: absolute;
-        background: rgba(0,0,0,0.5);
-        backdrop-filter: blur(5px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .IN_card1 .cardI1_details:hover{
-        width:80vw;
-        height:100%;
-        border-radius:20px;
-        opacity: 0;
-    
-    }
-    .cardI1_details h2{
-        font-family: sans-serif;
-        color: white;
-    }
-    .In_cards .IN_card2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position:relative;
-        margin-top: 5vh;
-        cursor: pointer;
-    
-    }
-    .IN_card2 img{
-        width:80vw;
-        border-radius:20px;
-    }
-    .IN_card2 .cardI2_details{
-        width:80vw;
-        height:100%;
-        border-radius:20px;
-        position: absolute;
-        background: rgba(0,0,0,0.5);
-        backdrop-filter: blur(5px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .IN_card2 .cardI2_details:hover{
-        width:80vw;
-        height:100%;
-        border-radius:20px;
-        opacity: 0;
-    
-    }
-}
-
-
-/*Page5*/
-
-
-.Page5{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width:100vw;
+@media (max-width: 501px) {
+  .Page4 {
+    height: 200vh;
     overflow-x: hidden;
-    overflow-y: hidden;
-}
-.Mobile_5{
+  }
+  .P_heading h1 {
+    font-family: "Avant Guard_1";
+    font-size: 12vw;
+    opacity: 1;
+    margin-left: -100vw;
+  }
+  .P_heading h1 span {
+    font-family: "Perpetua";
+    font-size: 20vw;
+  }
+  .P_contents .P_cSub {
     display: grid;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width:100vw;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 90% 10%;
-    grid-template-areas: "svg"
-                        "copy";
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "Projects"
+      "Internships";
+    margin-left: 0;
+    opacity: 1;
+  }
+  .Projects .Pr_heading h1 {
+    font-size: 10vw;
+  }
+  .PR_card1 img {
+    width: 80vw;
+    border-radius: 20px;
+  }
+  .PR_card1 .card1_details {
+    width: 80vw;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .PR_card1 .card1_details:hover {
+    width: 80vw;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+  }
+  .card1_details h2 {
+    font-family: sans-serif;
+    color: white;
+  }
+  .Pr_cards .PR_card2 {
+    margin-top: 5vh;
+  }
+  .PR_card2 img {
+    width: 80vw;
+    border-radius: 20px;
+  }
+  .PR_card2 .card2_details {
+    width: 80vw;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .PR_card2 .card2_details:hover {
+    width: 80vw;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+  }
+  .card2_details h2 {
+    font-family: sans-serif;
+    color: white;
+  }
+  .Internships .In_headings h1 {
+    font-size: 12vw;
+  }
+  .In_cards .IN_card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .IN_card1 img {
+    width: 80vw;
+    border-radius: 20px;
+  }
+  .IN_card1 .cardI1_details {
+    width: 80vw;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .IN_card1 .cardI1_details:hover {
+    width: 80vw;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+  }
+  .cardI1_details h2 {
+    font-family: sans-serif;
+    color: white;
+  }
+  .In_cards .IN_card2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 5vh;
+    cursor: pointer;
+  }
+  .IN_card2 img {
+    width: 80vw;
+    border-radius: 20px;
+  }
+  .IN_card2 .cardI2_details {
+    width: 80vw;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .IN_card2 .cardI2_details:hover {
+    width: 80vw;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+  }
 }
 
-.SVG{
-    grid-area: svg;
-    height:100%;
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*Page5*/
+
+.Page5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-.SVG svg{
-    width:70vw;
-    transition: 0.2s ease;
+.Mobile_5 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 100%;
+  grid-template-rows: 90% 10%;
+  grid-template-areas:
+    "svg"
+    "copy";
 }
-.Copy{
-    grid-area:copy;
-    height:100%;
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+
+.SVG {
+  grid-area: svg;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.Copy h1{
-    font-family: 'Avant Guard_1';
-    font-size: 1.2rem;
-    margin-top: 30vh;
-    position: relative;
-    z-index: 5;
+.SVG svg {
+  width: 70vw;
+  transition: 0.2s ease;
 }
-.Copy span{
-    font-size: 1.5rem;
-    cursor: pointer;
-    
+.Copy {
+  grid-area: copy;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.Copy span a{
-    color: #ff1d0d !important;;
+.Copy h1 {
+  font-family: "Avant Guard_1";
+  font-size: 1.2rem;
+  margin-top: 30vh;
+  position: relative;
+  z-index: 5;
 }
-.Copy .Bottom_icons{
-    display: none;
+.Copy span {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.Copy span a {
+  color: #ff1d0d !important;
+}
+.Copy .Bottom_icons {
+  display: none;
 }
 
 /*Tab Mode*/
 
-@media screen and (max-width:1025px) and (min-width:501px){
-    .SVG svg{
-        width:100vw;
-    }
-    .Copy{
-        position: relative;
-    }
-    .Copy h1{
-        font-family: 'Avant Guard_1';
-        font-size: 2vw;
-        text-align: center;
-        margin-top: 40vh;
-        transition: 1s ease;
-    }
-    .Copy .Bottom_icons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        margin-top: -10vh;
-    }
-    .Copy .Bottom_icons .Bottom_icon_sub{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
-    .Copy .Bottom_icons .Bottom_icon_sub svg{
-        width:2vw;
-        min-width: 14vw;
-        padding: 0 5vw;
-    }
+@media screen and (max-width: 1025px) and (min-width: 501px) {
+  .SVG svg {
+    width: 100vw;
+  }
+  .Copy {
+    position: relative;
+  }
+  .Copy h1 {
+    font-family: "Avant Guard_1";
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 40vh;
+    transition: 1s ease;
+  }
+  .Copy .Bottom_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: -10vh;
+  }
+  .Copy .Bottom_icons .Bottom_icon_sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .Copy .Bottom_icons .Bottom_icon_sub svg {
+    width: 2vw;
+    min-width: 14vw;
+    padding: 0 5vw;
+  }
 }
 
 /*Mobile Mode*/
 
-@media screen and (max-width:500px){
-    .SVG svg{
-        width:100vw;
-    }
-    .Copy{
-        grid-area:copy;
-        height:100%;
-        width:100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .Copy h1{
-        font-family: 'Avant Guard_1';
-        font-size: 3vw;
-        text-align: center;
-        margin-top:40vh;
-        opacity: 1;
-    }
-    .Copy span{
-        font-size: 5vw;
-        cursor: pointer;
-    }
-    .Copy .Bottom_icons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        margin-top: -15vh;
-    }
-    .Copy .Bottom_icons .Bottom_icon_sub{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        margin-top: 50vh;
-        transition: 1s ease;
-    }
-    .Copy .Bottom_icons .Bottom_icon_sub svg{
-        width:2vw;
-        min-width: 15vw;
-        padding: 0 5vw;
-    }
-    .Behance_1{
-        width:2vw;
-        min-width:25vw;
-    }
-    
+@media screen and (max-width: 500px) {
+  .SVG svg {
+    width: 100vw;
+  }
+  .Copy {
+    grid-area: copy;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Copy h1 {
+    font-family: "Avant Guard_1";
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 40vh;
+    opacity: 1;
+  }
+  .Copy span {
+    font-size: 5vw;
+    cursor: pointer;
+  }
+  .Copy .Bottom_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: -15vh;
+  }
+  .Copy .Bottom_icons .Bottom_icon_sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-top: 50vh;
+    transition: 1s ease;
+  }
+  .Copy .Bottom_icons .Bottom_icon_sub svg {
+    width: 2vw;
+    min-width: 15vw;
+    padding: 0 5vw;
+  }
+  .Behance_1 {
+    width: 2vw;
+    min-width: 25vw;
+  }
 }
-
 
 /*Button*/
 
+.Button {
+  width: 3vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 3vh 2vw;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.Button:hover {
+  transform: scale(1.1);
+}
 
-.Button{
-    width:3vw;
-    position: fixed;
-    top:0;
-    right:0;
-    margin: 3vh 2vw;
-    cursor: pointer;
-    z-index: 10;
-    transition: 0.5s ease;
-    opacity: 0;
+@media screen and (max-width: 1025px) and (min-width: 501px) {
+  .Button {
+    display: none;
+  }
 }
-.Button:hover{
-    transform: scale(1.1);
-}
-
-@media screen and (max-width:1025px) and (min-width:501px) {
-    .Button{
-        display: none;
-    }
-}
-@media screen and (max-width:501px){
-    .Button{
-        display: none;
-    }
+@media screen and (max-width: 501px) {
+  .Button {
+    display: none;
+  }
 }
 
 /* Button_mob */
 
-.Button_Mobile{
-    height: 5vh;
-    width:30vw;
-    border-radius: 25px;
-    background: rgb(255, 255, 255);
-    color:rgb(0, 0, 0);
-    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
-    font-family: 'Poppins_1';
-    font-size: 4vw;
-    position: fixed;
-    top:20px;
-    left:35vw;
-    outline: none;
-    z-index: 200;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    margin-top: -20vh;
-    transition: 0.5s ease;
+.Button_Mobile {
+  height: 5vh;
+  width: 30vw;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Poppins_1";
+  font-size: 4vw;
+  position: fixed;
+  top: 20px;
+  left: 35vw;
+  outline: none;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20vh;
+  transition: 0.5s ease;
 }
-@media screen and (max-width:1025px) and (min-width:501px) {
-    .Button_Mobile{
-        display: flex;
-        margin-top: -10vh;
-        font-size: 3vw;
-        border-radius: 30px;
-
-    }
+@media screen and (max-width: 1025px) and (min-width: 501px) {
+  .Button_Mobile {
+    display: flex;
+    margin-top: -10vh;
+    font-size: 3vw;
+    border-radius: 30px;
+  }
 }
-@media (max-width:500px) {
-    .Button_Mobile{
-        display: flex;
-    }
+@media (max-width: 500px) {
+  .Button_Mobile {
+    display: flex;
+  }
 }
-
 
 /* Button_mob End */
 
 /*Popup PC*/
 
-
-.Popup_Pc{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width:100%;
-    max-width: 100%;
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 1000;
-    background: rgb(255, 255, 255);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-
+.Popup_Pc {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgb(255, 255, 255);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.Popup_Pc .Popup_sub{
+.Popup_Pc .Popup_sub {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 80%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "top"
+    "bottom";
+}
+.Top_part {
+  grid-area: top;
+}
+.Top_part h1 {
+  font-family: "Avant Guard_1";
+  font-size: 5vw;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.Top_part h1 span {
+  font-size: 8vw;
+}
+.Bottom_part {
+  grid-area: bottom;
+}
+.Bottom_part .Pc h1 {
+  font-family: "Avant Guard_1";
+  font-size: 5vw;
+  font-weight: 800;
+}
+
+@media (max-width: 1025px) {
+  .Popup_Pc .Popup_sub {
     display: grid;
     align-items: center;
     justify-content: center;
-    height:80%;
-    width:80%;
+    height: 80%;
+    width: 80%;
     grid-template-rows: 50% 50%;
-    grid-template-columns:100%;
-    grid-template-areas: 'top'
-                        'bottom';
-}
-.Top_part{
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "top"
+      "bottom";
+  }
+  .Top_part {
     grid-area: top;
-}
-.Top_part h1{
-    font-family: 'Avant Guard_1';
-    font-size: 5vw;
+  }
+  .Top_part h1 {
+    font-family: "Avant Guard_1";
+    font-size: 8vw;
     font-weight: 800;
     text-transform: uppercase;
-}
-.Top_part h1 span{
-    font-size: 8vw;
-}
-.Bottom_part{
+  }
+  .Top_part h1 span {
+    font-size: 10vw;
+  }
+  .Bottom_part {
     grid-area: bottom;
-}
-.Bottom_part .Pc h1{
-    font-family: 'Avant Guard_1';
-    font-size: 5vw;
+    height: 100%;
+    width: 100%;
+  }
+  .Bottom_part .Pc h1 {
+    font-family: "Avant Guard_1";
+    font-size: 4vw;
     font-weight: 800;
+  }
+  .Bottom_part .Pc {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    height: 100%;
+    width: 100%;
+  }
+  .Bottom_part .Pc h1 {
+    font-family: "Avant Guard_1";
+    font-size: 7vw;
+    font-weight: 800;
+  }
+  .Bottom_part .Not_Pc {
+    display: none;
+  }
 }
-
-
-@media  (max-width:1025px){
-    .Popup_Pc .Popup_sub{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        height:80%;
-        width:80%;
-        grid-template-rows: 50% 50%;
-        grid-template-columns:100%;
-        grid-template-areas: 'top'
-                            'bottom';
-    }
-    .Top_part{
-        grid-area: top;
-    }
-    .Top_part h1{
-        font-family: 'Avant Guard_1';
-        font-size: 8vw;
-        font-weight: 800;
-        text-transform: uppercase;
-    }
-    .Top_part h1 span{
-        font-size: 10vw;
-    
-    }
-    .Bottom_part{
-        grid-area: bottom;
-        height: 100%;
-        width:100%;
-    }
-    .Bottom_part .Pc h1{
-        font-family: 'Avant Guard_1';
-        font-size: 4vw;
-        font-weight: 800;
-    }
-    .Bottom_part .Pc{
-        display: flex;
-        align-items: center;
-        justify-content:baseline;
-        height: 100%;
-        width:100%;
-    }
-    .Bottom_part .Pc h1{
-        font-family: 'Avant Guard_1';
-        font-size: 7vw;
-        font-weight: 800;
-    }
-    .Bottom_part .Not_Pc{
-        display: none;
-    }
-    
-}
-
-
 
 /*Popup PC End*/
 
 /*Popup MOB Tab*/
 
-.Popup_Pc_2{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width:100vw;
-    position: fixed;
-    top:0;
-    left: 0;
-    z-index: 1000;
-    background: white;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+.Popup_Pc_2 {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: white;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.Popup_Pc_2 .Popup_sub_2{
+.Popup_Pc_2 .Popup_sub_2 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 80%;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "top bottom";
+}
+.Top_part_2 svg {
+  width: 40vw;
+}
+.Top_part_2 {
+  grid-area: top;
+}
+.Top_part_2 h1 {
+  font-family: "Avant Guard_1";
+  font-size: 5vw;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.Top_part_2 h1 span {
+  font-size: 7vw;
+}
+.Bottom_part_2 {
+  grid-area: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Bottom_part_2 .Pc_2 h1 {
+  font-family: "Avant Guard_1";
+  font-size: 3vw;
+  font-weight: 800;
+}
+
+@media (max-width: 1025px) {
+  .Popup_Pc_2 .Popup_sub_2 {
     display: grid;
     align-items: center;
     justify-content: center;
-    height:80%;
-    width:80%;
+    height: 80%;
+    width: 80%;
     grid-template-rows: 100%;
-    grid-template-columns:50% 50%;
-    grid-template-areas: 'top bottom';
-}
-.Top_part_2 svg{
-    width:40vw;
-}
-.Top_part_2{
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "top bottom";
+  }
+  .Top_part_2 {
     grid-area: top;
-}
-.Top_part_2 h1{
-    font-family: 'Avant Guard_1';
-    font-size: 5vw;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-.Top_part_2 h1 span{
-    font-size: 7vw;
-}
-.Bottom_part_2{
-    grid-area: bottom;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
+    grid-template-rows: 50% 50%;
     height: 100%;
-    width:100%;
-}
-.Bottom_part_2 .Pc_2 h1{
-    font-family: 'Avant Guard_1';
+    width: 100%;
+  }
+  .Top_part_2 h1 {
+    font-family: "Avant Guard_1";
+    font-size: 6vw;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .Top_part_2 h1 span {
+    font-size: 8vw;
+  }
+  .Bottom_part_2 {
+    grid-area: bottom;
+    height: 100%;
+    width: 100%;
+  }
+  .Bottom_part_2 .Pc_2 h1 {
+    font-family: "Avant Guard_1";
+    font-size: 4vw;
+    font-weight: 800;
+  }
+  .Bottom_part_2 .Pc_2 {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    height: 100%;
+    width: 100%;
+  }
+  .Bottom_part_2 .Pc_2 h1 {
+    font-family: "Avant Guard_1";
     font-size: 3vw;
     font-weight: 800;
-}
-
-
-@media  (max-width:1025px){
-    .Popup_Pc_2 .Popup_sub_2{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        height:80%;
-        width:80%;
-        grid-template-rows: 100%;
-        grid-template-columns:50% 50%;
-        grid-template-areas: 'top bottom';
-    }
-    .Top_part_2{
-        grid-area: top;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-rows:50% 50%;
-        height: 100%;
-        width:100%;
-    }
-    .Top_part_2 h1{
-        font-family: 'Avant Guard_1';
-        font-size: 6vw;
-        font-weight: 800;
-        text-transform: uppercase;
-    }
-    .Top_part_2 h1 span{
-        font-size: 8vw;
-    
-    }
-    .Bottom_part_2{
-        grid-area: bottom;
-        height: 100%;
-        width:100%;
-    }
-    .Bottom_part_2 .Pc_2 h1{
-        font-family: 'Avant Guard_1';
-        font-size: 4vw;
-        font-weight: 800;
-    }
-    .Bottom_part_2 .Pc_2{
-        display: flex;
-        align-items: center;
-        justify-content:baseline;
-        height: 100%;
-        width:100%;
-    }
-    .Bottom_part_2 .Pc_2 h1{
-        font-family: 'Avant Guard_1';
-        font-size: 3vw;
-        font-weight: 800;
-    }
-    
-    
+  }
 }
 
 /*Popup MOB Tab end*/
@@ -1971,656 +1918,657 @@ background: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
 
 /*Project Popup - 1*/
 
-.Project_Main{
-    height: 100vh;
-    width: 100vw;
-    background: rgba(0,0,0,1);
+.Project_Main {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 1);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+    "images"
+    "link";
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.Project_Main .Project_Sub {
+  height: 100%;
+  width: 100%;
+  grid-area: images;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas:
+    "text"
+    "image";
+}
+.Project_Sub .Project_sub_text {
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Project_Sub .Project_sub_text h1 {
+  font-size: 3vw;
+  color: white;
+  font-family: "Poppins_1";
+}
+.Project_Sub .Project_sub_image {
+  height: 100%;
+  width: 100%;
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Project_Sub .Project_sub_image img {
+  width: 60vw;
+  border-radius: 20px;
+  padding: 2vh 2vw;
+  border: 5px solid white;
+}
+.Project_Main .Project_Link {
+  height: 100%;
+  width: 100%;
+  grid-area: link;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Project_Link svg {
+  width: 3vw;
+  cursor: pointer;
+}
+.Project_Link svg:hover {
+  transform: rotate(360deg);
+}
+.Tab_Phone_Close {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.Project_Link svg:hover {
+  opacity: 70%;
+}
+
+.Close_button {
+  position: absolute;
+  z-index: 2;
+  top: 5vh;
+  right: 5vw;
+}
+.Close_button svg {
+  width: 2vw;
+  cursor: pointer;
+}
+.Close_button :hover {
+  opacity: 80%;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 500px) {
+  .Project_Sub .Project_sub_image img {
+    width: 80vw;
+  }
+  .Project_Sub .Project_sub_text {
+    height: 100%;
+    width: 100%;
+  }
+  .Project_Sub .Project_sub_text h1 {
+    font-size: 5vw;
+    margin-top: 20vh;
+  }
+  .Project_Link {
+    padding: 0 5vw;
+  }
+  .Project_Link svg {
+    width: 5vw;
+    cursor: pointer;
+    outline: none;
+  }
+  .Close_button {
     display: none;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 80% 20%;
-    grid-template-areas:"images"
-                        "link";
-    position:fixed;
-    top:0;
-    z-index: 100;
-}
-.Project_Main .Project_Sub{
-    height:100%;
-    width: 100%;
-    grid-area:images ;
-    display:grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:"text"
-                        "image";
-}
-.Project_Sub .Project_sub_text{
-    grid-area: text;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.Project_Sub .Project_sub_text h1{
-    font-size: 3vw;
-    color:white;
-    font-family: 'Poppins_1';
-}
-.Project_Sub .Project_sub_image{
-    height: 100%;
-    width:100%;
-    grid-area: image;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.Project_Sub .Project_sub_image img{
-    width:60vw;
-    border-radius: 20px;
-    padding: 2vh 2vw;
-    border: 5px solid white;
-}
-.Project_Main .Project_Link{
-    height: 100%;
-    width:100%;
-    grid-area: link;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Project_Link svg{
-    width:3vw;
-    cursor:pointer;
-}
-.Project_Link svg:hover{
-    transform: rotate(360deg);
-}
-.Tab_Phone_Close{
-    position: absolute;
+  }
+  .Tab_Phone_Close {
+    position: relative;
     z-index: 2;
-    display:none;
-}
-.Project_Link svg:hover{
-   opacity: 70%;
+    display: block;
+    padding: 0 5vw;
+  }
 }
 
-.Close_button{
-    position: absolute;
+@media screen and (max-width: 500px) {
+  .Project_Sub .Project_sub_image img {
+    width: 80vw;
+  }
+  .Close_button {
+    display: none;
+  }
+  .Project_Sub .Project_sub_text {
+    height: 100%;
+    width: 100%;
+  }
+  .Project_Sub .Project_sub_text h1 {
+    font-size: 5vw;
+    margin-top: 20vh;
+  }
+  .Project_Link {
+    padding: 0 5vw;
+  }
+  .Project_Link svg {
+    width: 5vw;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .Tab_Phone_Close {
+    position: relative;
     z-index: 2;
-    top:5vh;
-    right:5vw;
-}
-.Close_button svg{
-    width:2vw;
-    cursor:pointer;
-}
-.Close_button :hover{
-   opacity: 80%;
-}
-
-@media screen and (max-width:1025px) and (min-width:500px){
-    .Project_Sub .Project_sub_image img{
-        width:80vw
-    }
-    .Project_Sub .Project_sub_text{
-        height: 100%;
-        width: 100%;
-    }
-    .Project_Sub .Project_sub_text h1{
-        font-size: 5vw;
-        margin-top: 20vh;
-    }
-    .Project_Link{
-        padding: 0 5vw;
-
-    }
-    .Project_Link svg{
-        width:5vw;
-        cursor:pointer;
-        outline: none;
-    }
-    .Close_button{
-       display: none;
-    }
-    .Tab_Phone_Close{
-        position: relative;
-        z-index: 2;
-        display: block;
-        padding: 0 5vw;
-    }
-}
-
-@media screen and (max-width:500px){
-    .Project_Sub .Project_sub_image img{
-        width:80vw
-    }
-    .Close_button{
-        display: none;
-    }
-    .Project_Sub .Project_sub_text{
-        height: 100%;
-        width: 100%;
-    }
-    .Project_Sub .Project_sub_text h1{
-        font-size: 5vw;
-        margin-top: 20vh;
-    }
-    .Project_Link{
-        padding: 0 5vw;
-    }
-    .Project_Link svg{
-        width:5vw;
-        cursor:pointer;
-        outline: none;
-    }
-    
-    .Tab_Phone_Close{
-        position: relative;
-        z-index: 2;
-        display: block;
-        padding: 0 5vw;
-    }
+    display: block;
+    padding: 0 5vw;
+  }
 }
 
 /*Project Popup - 1 end*/
 
-
 /*Project Popup - 2*/
 
-.Project_Main_2{
-    height: 100vh;
-    width: 100vw;
-    background: rgba(0,0,0,1);
+.Project_Main_2 {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 1);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+    "images"
+    "link";
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.Project_Main_2 .Project_Sub_2 {
+  height: 100%;
+  width: 100%;
+  grid-area: images;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas:
+    "text"
+    "image";
+}
+.Project_Sub_2 .Project_sub_text_2 {
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Project_Sub_2 .Project_sub_text_2 h1 {
+  font-size: 3vw;
+  color: white;
+  font-family: "Poppins_1";
+}
+.Project_Sub_2 .Project_sub_image_2 {
+  height: 100%;
+  width: 100%;
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Project_Sub_2 .Project_sub_image_2 img {
+  width: 60vw;
+  border-radius: 20px;
+  padding: 2vh 2vw;
+  border: 5px solid white;
+}
+.Project_Main_2 .Project_Link_2 {
+  height: 100%;
+  width: 100%;
+  grid-area: link;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Project_Link_2 svg {
+  width: 3vw;
+  cursor: pointer;
+}
+.Project_Link_2 svg:hover {
+  transform: rotate(360deg);
+}
+.Tab_Phone_Close_2 {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.Project_Link_2 svg:hover {
+  opacity: 70%;
+}
+
+.Close_button_2 {
+  position: absolute;
+  z-index: 2;
+  top: 5vh;
+  right: 5vw;
+}
+.Close_button_2 svg {
+  width: 2vw;
+  cursor: pointer;
+}
+.Close_button_2 :hover {
+  opacity: 80%;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 500px) {
+  .Project_Sub_2 .Project_sub_image_2 img {
+    width: 80vw;
+  }
+  .Project_Sub_2 .Project_sub_text_2 {
+    height: 100%;
+    width: 100%;
+  }
+  .Project_Sub_2 .Project_sub_text_2 h1 {
+    font-size: 5vw;
+    margin-top: 20vh;
+  }
+  .Project_Link_2 {
+    padding: 0 5vw;
+  }
+  .Project_Link_2 svg {
+    width: 5vw;
+    cursor: pointer;
+    outline: none;
+  }
+  .Close_button_2 {
     display: none;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 80% 20%;
-    grid-template-areas:"images"
-                        "link";
-    position:fixed;
-    top:0;
-    z-index: 100;
-}
-.Project_Main_2 .Project_Sub_2{
-    height:100%;
-    width: 100%;
-    grid-area:images ;
-    display:grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:"text"
-                        "image";
-}
-.Project_Sub_2 .Project_sub_text_2{
-    grid-area: text;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.Project_Sub_2 .Project_sub_text_2 h1{
-    font-size: 3vw;
-    color:white;
-    font-family: 'Poppins_1';
-}
-.Project_Sub_2 .Project_sub_image_2{
-    height: 100%;
-    width:100%;
-    grid-area: image;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.Project_Sub_2 .Project_sub_image_2 img{
-    width:60vw;
-    border-radius: 20px;
-    padding: 2vh 2vw;
-    border: 5px solid white;
-}
-.Project_Main_2 .Project_Link_2{
-    height: 100%;
-    width:100%;
-    grid-area: link;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Project_Link_2 svg{
-    width:3vw;
-    cursor:pointer;
-}
-.Project_Link_2 svg:hover{
-    transform: rotate(360deg);
-}
-.Tab_Phone_Close_2{
-    position: absolute;
+  }
+  .Tab_Phone_Close_2 {
+    position: relative;
     z-index: 2;
-    display:none;
-}
-.Project_Link_2 svg:hover{
-   opacity: 70%;
+    display: block;
+    padding: 0 5vw;
+  }
 }
 
-.Close_button_2{
-    position: absolute;
+@media screen and (max-width: 500px) {
+  .Project_Sub_2 .Project_sub_image_2 img {
+    width: 80vw;
+  }
+  .Close_button_2 {
+    display: none;
+  }
+  .Project_Sub_2 .Project_sub_text_2 {
+    height: 100%;
+    width: 100%;
+  }
+  .Project_Sub_2 .Project_sub_text_2 h1 {
+    font-size: 5vw;
+    margin-top: 20vh;
+  }
+  .Project_Link_2 {
+    padding: 0 5vw;
+  }
+  .Project_Link_2 svg {
+    width: 5vw;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .Tab_Phone_Close_2 {
+    position: relative;
     z-index: 2;
-    top:5vh;
-    right:5vw;
-}
-.Close_button_2 svg{
-    width:2vw;
-    cursor:pointer;
-}
-.Close_button_2 :hover{
-   opacity: 80%;
-}
-
-@media screen and (max-width:1025px) and (min-width:500px){
-    .Project_Sub_2 .Project_sub_image_2 img{
-        width:80vw
-    }
-    .Project_Sub_2 .Project_sub_text_2{
-        height: 100%;
-        width: 100%;
-    }
-    .Project_Sub_2 .Project_sub_text_2 h1{
-        font-size: 5vw;
-        margin-top: 20vh;
-    }
-    .Project_Link_2{
-        padding: 0 5vw;
-    }
-    .Project_Link_2 svg{
-        width:5vw;
-        cursor:pointer;
-        outline: none;
-    }
-    .Close_button_2{
-       display: none;
-    }
-    .Tab_Phone_Close_2{
-        position: relative;
-        z-index: 2;
-        display: block;
-        padding: 0 5vw;
-    }
-}
-
-@media screen and (max-width:500px){
-    .Project_Sub_2 .Project_sub_image_2 img{
-        width:80vw
-    }
-    .Close_button_2{
-        display: none;
-    }
-    .Project_Sub_2 .Project_sub_text_2{
-        height: 100%;
-        width: 100%;
-    }
-    .Project_Sub_2 .Project_sub_text_2 h1{
-        font-size: 5vw;
-        margin-top: 20vh;
-    }
-    .Project_Link_2{
-        padding: 0 5vw;
-    }
-    .Project_Link_2 svg{
-        width:5vw;
-        cursor:pointer;
-        outline: none;
-    }
-    
-    .Tab_Phone_Close_2{
-        position: relative;
-        z-index: 2;
-        display: block;
-        padding: 0 5vw;
-    }
+    display: block;
+    padding: 0 5vw;
+  }
 }
 
 /*Project Popup - 2 end*/
 
 /*Project Popup end*/
 
-
 /*Internship Popup*/
 
 /*Internship Popup - 1*/
 
-.Internship_Main{
-    height: 100vh;
-    width: 100vw;
-    background: rgba(0,0,0,1);
+.Internship_Main {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 1);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+    "images"
+    "link";
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.Internship_Main .Internship_Sub {
+  height: 100%;
+  width: 100%;
+  grid-area: images;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas:
+    "text"
+    "image";
+}
+.Internship_Sub .Internship_sub_text {
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Internship_Sub .Internship_sub_text h1 {
+  font-size: 3vw;
+  color: white;
+  font-family: "Poppins_1";
+}
+.Internship_Sub .Internship_sub_image {
+  height: 100%;
+  width: 100%;
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Internship_Sub .Internship_sub_image img {
+  width: 40vw;
+  border-radius: 40px;
+  padding: 2vh 2vw;
+  border: 5px solid white;
+}
+
+.Internship_Main .Internship_Link {
+  height: 100%;
+  width: 100%;
+  grid-area: link;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Internship_Link svg {
+  width: 3vw;
+  cursor: pointer;
+}
+.Internship_Link svg:hover {
+  transform: rotate(360deg);
+}
+.IT_Tab_Phone_Close {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.Internship_Link svg:hover {
+  opacity: 70%;
+}
+
+.IT_Close_button {
+  position: absolute;
+  z-index: 2;
+  top: 5vh;
+  right: 5vw;
+}
+.IT_Close_button svg {
+  width: 2vw;
+  cursor: pointer;
+}
+.IT_Close_button :hover {
+  opacity: 80%;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 500px) {
+  .Internship_Sub .Internship_sub_image img {
+    width: 80vw;
+  }
+  .Internship_Sub .Internship_sub_text {
+    height: 100%;
+    width: 100%;
+  }
+  .Internship_Sub .Internship_sub_text h1 {
+    font-size: 5vw;
+    margin-top: 20vh;
+  }
+  .Internship_Link {
+    padding: 0 5vw;
+  }
+  .Internship_Link svg {
+    width: 5vw;
+    cursor: pointer;
+    outline: none;
+  }
+  .IT_Close_button {
     display: none;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 80% 20%;
-    grid-template-areas:"images"
-                        "link";
-    position:fixed;
-    top:0;
-    z-index: 100;
-}
-.Internship_Main .Internship_Sub{
-    height:100%;
-    width: 100%;
-    grid-area:images ;
-    display:grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:"text"
-                        "image";
-}
-.Internship_Sub .Internship_sub_text{
-    grid-area: text;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.Internship_Sub .Internship_sub_text h1{
-    font-size: 3vw;
-    color:white;
-    font-family: 'Poppins_1';
-}
-.Internship_Sub .Internship_sub_image{
-    height: 100%;
-    width:100%;
-    grid-area: image;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-   
-}
-.Internship_Sub .Internship_sub_image img{
-    width:40vw;
-    border-radius:40px;
-    padding: 2vh 2vw;
-    border: 5px solid white;
-}
-
-.Internship_Main .Internship_Link{
-    height: 100%;
-    width:100%;
-    grid-area: link;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Internship_Link svg{
-    width:3vw;
-    cursor:pointer;
-}
-.Internship_Link svg:hover{
-    transform: rotate(360deg);
-}
-.IT_Tab_Phone_Close{
-    position: absolute;
+  }
+  .IT_Tab_Phone_Close {
+    position: relative;
     z-index: 2;
-    display:none;
-}
-.Internship_Link svg:hover{
-   opacity: 70%;
+    display: block;
+    padding: 0 5vw;
+  }
 }
 
-.IT_Close_button{
-    position: absolute;
+@media screen and (max-width: 500px) {
+  .Internship_Sub .Internship_sub_image img {
+    width: 80vw;
+  }
+  .IT_Close_button {
+    display: none;
+  }
+  .Internship_Sub .Internship_sub_text {
+    height: 100%;
+    width: 100%;
+  }
+  .Internship_Sub .Internship_sub_text h1 {
+    font-size: 5vw;
+    margin-top: 20vh;
+  }
+  .Internship_Link {
+    padding: 0 5vw;
+  }
+  .Internship_Link svg {
+    width: 5vw;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .IT_Tab_Phone_Close {
+    position: relative;
     z-index: 2;
-    top:5vh;
-    right:5vw;
-}
-.IT_Close_button svg{
-    width:2vw;
-    cursor:pointer;
-}
-.IT_Close_button :hover{
-   opacity: 80%;
-}
-
-@media screen and (max-width:1025px) and (min-width:500px){
-    .Internship_Sub .Internship_sub_image img{
-        width:80vw
-    
-    }
-    .Internship_Sub .Internship_sub_text{
-        height: 100%;
-        width: 100%;
-    }
-    .Internship_Sub .Internship_sub_text h1{
-        font-size: 5vw;
-        margin-top: 20vh;
-    }
-    .Internship_Link{
-        padding: 0 5vw;
-    }
-    .Internship_Link svg{
-        width:5vw;
-        cursor:pointer;
-        outline: none;
-    }
-    .IT_Close_button{
-       display: none;
-    }
-    .IT_Tab_Phone_Close{
-        position: relative;
-        z-index: 2;
-        display: block;
-        padding: 0 5vw;
-    }
-}
-
-@media screen and (max-width:500px){
-    .Internship_Sub .Internship_sub_image img{
-        width:80vw
-    }
-    .IT_Close_button{
-        display: none;
-    }
-    .Internship_Sub .Internship_sub_text{
-        height: 100%;
-        width: 100%;
-    }
-    .Internship_Sub .Internship_sub_text h1{
-        font-size: 5vw;
-        margin-top: 20vh;
-    }
-    .Internship_Link{
-        padding: 0 5vw;
-    }
-    .Internship_Link svg{
-        width:5vw;
-        cursor:pointer;
-        outline: none;
-    }
-    
-    .IT_Tab_Phone_Close{
-        position: relative;
-        z-index: 2;
-        display: block;
-        padding: 0 5vw;
-    }
+    display: block;
+    padding: 0 5vw;
+  }
 }
 
 /*Internship Popup - 1 end*/
 
-
 /*Internship Popup - 2*/
 
-.Internship_Main_2{
-    height: 100vh;
-    width: 100vw;
-    background: rgba(0,0,0,1);
+.Internship_Main_2 {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 1);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+    "images"
+    "link";
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.Internship_Main_2 .Internship_Sub_2 {
+  height: 100%;
+  width: 100%;
+  grid-area: images;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas:
+    "text"
+    "image";
+}
+.Internship_Sub_2 .Internship_sub_text_2 {
+  grid-area: text;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Internship_Sub_2 .Internship_sub_text_2 h1 {
+  font-size: 3vw;
+  color: white;
+  font-family: "Poppins_1";
+}
+.Internship_Sub_2 .Internship_sub_image_2 {
+  height: 100%;
+  width: 100%;
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.Internship_Sub_2 .Internship_sub_image_2 img {
+  width: 40vw;
+  border-radius: 20px;
+  padding: 2vh 2vw;
+  border: 5px solid white;
+}
+.Internship_Main_2 .Internship_Link_2 {
+  height: 100%;
+  width: 100%;
+  grid-area: link;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Internship_Link_2 svg {
+  width: 3vw;
+  cursor: pointer;
+}
+.Internship_Link_2 svg:hover {
+  transform: rotate(360deg);
+}
+.IT_Tab_Phone_Close_2 {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.Internship_Link_2 svg:hover {
+  opacity: 70%;
+}
+
+.IT_Close_button_2 {
+  position: absolute;
+  z-index: 2;
+  top: 5vh;
+  right: 5vw;
+}
+.IT_Close_button_2 svg {
+  width: 2vw;
+  cursor: pointer;
+}
+.IT_Close_button_2 :hover {
+  opacity: 80%;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 500px) {
+  .Internship_Sub_2 .Internship_sub_image_2 img {
+    width: 80vw;
+  }
+  .Internship_Sub_2 .Internship_sub_text_2 {
+    height: 100%;
+    width: 100%;
+  }
+  .Internship_Sub_2 .Internship_sub_text_2 h1 {
+    font-size: 5vw;
+    margin-top: 20vh;
+  }
+  .Internship_Link_2 {
+    padding: 0 5vw;
+  }
+  .Internship_Link_2 svg {
+    width: 5vw;
+    cursor: pointer;
+    outline: none;
+  }
+  .IT_Close_button_2 {
     display: none;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 80% 20%;
-    grid-template-areas:"images"
-                        "link";
-    position:fixed;
-    top:0;
-    z-index: 100;
-}
-.Internship_Main_2 .Internship_Sub_2{
-    height:100%;
-    width: 100%;
-    grid-area:images ;
-    display:grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:"text"
-                        "image";
-}
-.Internship_Sub_2 .Internship_sub_text_2{
-    grid-area: text;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.Internship_Sub_2 .Internship_sub_text_2 h1{
-    font-size: 3vw;
-    color:white;
-    font-family: 'Poppins_1';
-}
-.Internship_Sub_2 .Internship_sub_image_2{
-    height: 100%;
-    width:100%;
-    grid-area: image;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-.Internship_Sub_2 .Internship_sub_image_2 img{
-    width:40vw;
-    border-radius: 20px;
-    padding: 2vh 2vw;
-    border: 5px solid white;
-
-}
-.Internship_Main_2 .Internship_Link_2{
-    height: 100%;
-    width:100%;
-    grid-area: link;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Internship_Link_2 svg{
-    width:3vw;
-    cursor:pointer;
-}
-.Internship_Link_2 svg:hover{
-    transform: rotate(360deg);
-}
-.IT_Tab_Phone_Close_2{
-    position: absolute;
+  }
+  .IT_Tab_Phone_Close_2 {
+    position: relative;
     z-index: 2;
-    display:none;
-}
-.Internship_Link_2 svg:hover{
-   opacity: 70%;
+    display: block;
+    padding: 0 5vw;
+  }
 }
 
-.IT_Close_button_2{
-    position: absolute;
+@media screen and (max-width: 500px) {
+  .Internship_Sub_2 .Internship_sub_image_2 img {
+    width: 80vw;
+  }
+  .IT_Close_button_2 {
+    display: none;
+  }
+  .Internship_Sub_2 .Internship_sub_text_2 {
+    height: 100%;
+    width: 100%;
+  }
+  .Internship_Sub_2 .Internship_sub_text_2 h1 {
+    font-size: 5vw;
+    margin-top: 20vh;
+  }
+  .Internship_Link_2 {
+    padding: 0 5vw;
+  }
+  .Internship_Link_2 svg {
+    width: 5vw;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .IT_Tab_Phone_Close_2 {
+    position: relative;
     z-index: 2;
-    top:5vh;
-    right:5vw;
-}
-.IT_Close_button_2 svg{
-    width:2vw;
-    cursor:pointer;
-}
-.IT_Close_button_2 :hover{
-   opacity: 80%;
-}
-
-@media screen and (max-width:1025px) and (min-width:500px){
-    .Internship_Sub_2 .Internship_sub_image_2 img{
-        width:80vw
-    }
-    .Internship_Sub_2 .Internship_sub_text_2{
-        height: 100%;
-        width: 100%;
-    }
-    .Internship_Sub_2 .Internship_sub_text_2 h1{
-        font-size: 5vw;
-        margin-top: 20vh;
-    }
-    .Internship_Link_2{
-        padding: 0 5vw;
-    }
-    .Internship_Link_2 svg{
-        width:5vw;
-        cursor:pointer;
-        outline: none;
-    }
-    .IT_Close_button_2{
-       display: none;
-    }
-    .IT_Tab_Phone_Close_2{
-        position: relative;
-        z-index: 2;
-        display: block;
-        padding: 0 5vw;
-    }
-}
-
-@media screen and (max-width:500px){
-    .Internship_Sub_2 .Internship_sub_image_2 img{
-        width:80vw
-    }
-    .IT_Close_button_2{
-        display: none;
-    }
-    .Internship_Sub_2 .Internship_sub_text_2{
-        height: 100%;
-        width: 100%;
-    }
-    .Internship_Sub_2 .Internship_sub_text_2 h1{
-        font-size: 5vw;
-        margin-top: 20vh;
-    }
-    .Internship_Link_2{
-        padding: 0 5vw;
-    }
-    .Internship_Link_2 svg{
-        width:5vw;
-        cursor:pointer;
-        outline: none;
-    }
-    
-    .IT_Tab_Phone_Close_2{
-        position: relative;
-        z-index: 2;
-        display: block;
-        padding: 0 5vw;
-    }
+    display: block;
+    padding: 0 5vw;
+  }
 }
 
 /*Internship Popup - 2 end*/
